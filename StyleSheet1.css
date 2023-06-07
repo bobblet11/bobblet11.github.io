@@ -1,6 +1,7 @@
 ﻿body{
     width: 1920px;
     margin:0 auto;
+    color: azure; background: rgb(48,54,83); background: linear-gradient(90deg, rgba(48,54,83,1) 0%, rgba(6,6,38,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 .inline_30_split_left {
