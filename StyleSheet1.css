@@ -1,4 +1,9 @@
-﻿.inline_30_split_left {
+﻿body{
+    width: 1920px;
+    margin:0 auto;
+}
+
+.inline_30_split_left {
     float: left;
     width: 30%
 }
