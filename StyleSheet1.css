@@ -1,0 +1,110 @@
+﻿.inline_30_split_left {
+    float: left;
+    width: 30%
+}
+
+.inline_70_split_right {
+    float: right;
+    width: 70%;
+    text-align: left;
+    display: block;
+}
+
+.left_100px_space_scaling {
+    width: 78%;
+    margin-left: 100px;
+    margin-top: 45px;
+    float: left;
+}
+
+.right_100px_space_scaling {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 100px;
+    float: left;
+}
+
+.image-standard {
+    border-color: azure;
+    border-style: groove;
+}
+
+.image-link {
+    border-color: white;
+    border-style: ridge;
+    border-width: 5px;
+}
+
+.external_titles {
+    font-size: 52pt;
+    font-family: 'Times New Roman';
+    font-weight: 500;
+    margin: 0px;
+}
+
+.external_subtitles {
+    font-size: 32pt;
+    font-family: 'Times New Roman';
+    font-weight: 500;
+    margin: 0px;
+}
+
+.internal_titles {
+    font-size: 23pt;
+    font-family: 'Times New Roman';
+    font-weight: 300;
+    margin: 0px;
+    text-align:center;
+    
+}
+
+.internal_text {
+    font-size: 22pt;
+    font-family: 'Times New Roman';
+    font-weight:normal;
+    margin: 10px 0px 0px 10px;
+    
+}
+
+
+.navigator {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigator_clear {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.navigator_clear > div {
+    text-align: center;
+}
+
+
+.parent {
+}
+
+.parent:hover .image-link {
+    border-color: red;
+}
+
+.parent:active .image-link {
+    border-color: orangered;
+}
+
+.navigator > a {
+    font-size: 15pt;
+    font-family: 'Times New Roman';
+    font-weight: normal;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: red;
+}
