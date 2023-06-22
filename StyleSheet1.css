@@ -89,6 +89,9 @@ section{
     border-color: white;
     border-style: ridge;
     border-width: 5px;
+    border-radius: 30%;
+    width: 80px;
+    height: 80px;
 }
 
 .external_titles {
@@ -128,6 +131,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color:black;
 }
 
 .navigator_clear {
@@ -160,12 +164,129 @@ section{
     font-family: 'Times New Roman';
     font-weight: normal;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
     color: black;
     opacity: 70%;
+    vertical-align: central;
+    margin: 10px 100px 10px 100px;
 }
 
 .navigator > a:hover {
    opacity:100%;
+}
+
+
+
+
+
+
+
+#webpage-ceiling {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    text-align: center;
+}
+
+#top-nav {
+    margin: 20px 0px 20px 0px;
+}
+
+#hku-logo {
+    width: 10%;
+}
+#hku-logo-photo {
+    width: 60%;
+    height: 60%;
+    margin: 5px 5px 5px 5px;
+}
+
+#media-links {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-photo-link{
+    border-radius:30%;
+    width:80px;
+    height:80px;
+}
+
+#title {
+    width: 50%;
+}
+
+#clock-holder {
+    width: 30%;
+    background-color: none;
+    text-align: center;
+}
+
+.nav-holder {
+    height: 50px;
+    padding: 20px;
+    border-color: azure;
+    margin: 10px 0px 10px 0px;
+    background-color: azure;
+}
+
+
+#intro-section {
+    position: relative;
+}
+
+#skills-section {
+    position: relative;
+}
+
+#work-experience-section {
+    position: relative;
+}
+
+#projects-section {
+    position: relative;
+}
+
+#contact-section {
+    position: relative;
+    height: 700px;
+    margin: 20px 100px 20px 100px;
+    background-color: black;
+    border-radius: 5%;
+}
+
+#architecture-sub-section {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    height: 500px;
+    width: 100%
+}
+
+#kitchen-sub-section {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    height: 500px;
+    width: 100%
+}
+
+#kitchen-photo {
+    width: 88%;
+    height: 490px;
+    margin: 5px 5px 5px 100px;
+    border: none;
+    float: left;
+}
+
+#architecture-photo {
+    width: 88%;
+    height: 490px;
+    margin: 5px 100px 5px 5px;
+    border: none;
+    float: left;
 }
