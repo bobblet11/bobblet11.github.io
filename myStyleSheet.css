@@ -23,8 +23,8 @@
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0 0 0 0;
     color: black;
     background-color: white;
@@ -48,7 +48,7 @@ body {
     top: 0px;
     left: 0px;
 
-    width: 100%;
+    width: 100vw;   
     height: 100px;
     
     margin: 0 0 0 0;
@@ -60,7 +60,7 @@ body {
 }
 
 #titleContainer {
-    height: 100%;
+    height: 100vw;
     width: 975px;
 
     vertical-align:central;
@@ -195,13 +195,11 @@ body {
 #mainNavigator {
     z-index: 2;
 
-    width: 1920px;
+    width: 100vw;
     height: 50px;
     margin: 0 0 0 0;
-
     border-width: 0 0 2px 0;
     border-style: solid;
-
     border-color: darkgrey;
     flex-flow: row wrap;
     display: flex;
@@ -248,7 +246,15 @@ body {
     height: 10000px;
 }
 
+#headerPhotoContainer 
+{
+    width: 100vh;
+    height: 800px;
+    text-align:center;
+}
+
 #headerPhoto {
+    margin: 0 auto;
     width:1920px;
     height:800px;
 }
