@@ -16,11 +16,15 @@ function UpdateTime() {
         secs = '0' + secs;
     }
 
+    if (hours < '10') {
+        hours = '0' + hours;
+    }
+
     var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
     var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
-    str1 = " <p style='text-align: center;font-size: 22pt;font-family: 'Times New Roman'; margin-top:1px;margin-bottom:1px;' > Today is <strong>" + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() +
-        "<br></strong> Local Time: <strong>" + hours + ":" + mins + ":" + secs + "</strong></p>";
+    str1 = " <p> Today is <strong>" + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() +
+        "<br></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local Time: <strong>" + hours + ":" + mins + ":" + secs + "</strong></p>";
     document.getElementById("clock").innerHTML = str1;
 }
 
