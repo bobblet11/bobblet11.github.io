@@ -1,4 +1,5 @@
-// JavaScript source code
+
+// update date and time
 function UpdateTime() {
     now = new Date();
     localTime = now.toString();
@@ -28,4 +29,5 @@ function UpdateTime() {
     document.getElementById("clock").innerHTML = str1;
 }
 
+//calls time function
 setInterval(UpdateTime, 1000);

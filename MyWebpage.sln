@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		index.html = index.html
 		myStyleSheet.css = myStyleSheet.css
 		Script1.js = Script1.js
+		Script2.js = Script2.js
 	EndProjectSection
 EndProject
 Global
