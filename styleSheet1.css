@@ -33,7 +33,6 @@ footer {
     border-width: 2px;
 }
 
-<<<<<<< HEAD
 /* Dropdown Button */
 .dropbtn {
     background-color: white;
@@ -81,8 +80,6 @@ footer {
     background-color: #c9c9c9;
 }
 
-=======
->>>>>>> 2a858af (new photos, videos, and work experience page. compressed the videos)
 /*@media screen and (min-width:1920px) { */
 body {
     height: 100vh;
@@ -395,20 +392,16 @@ article {
     margin: 3px 0 0 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-
     text-decoration:none;
-=======
->>>>>>> 2a858af (new photos, videos, and work experience page. compressed the videos)
+
 }
 
 .navText > a {
     opacity: 75%;
     color: black;
-<<<<<<< HEAD
+
     text-decoration:none;
-=======
->>>>>>> 2a858af (new photos, videos, and work experience page. compressed the videos)
+
 }
 
 .navText > a:visited {
@@ -423,7 +416,6 @@ article {
     opacity: 100%;
 }
 
-<<<<<<< HEAD
 .dropdown-content > a {
     opacity: 75%;
     color: black;
@@ -459,9 +451,6 @@ article {
     opacity: 100%;
 }
 
-
-=======
->>>>>>> 2a858af (new photos, videos, and work experience page. compressed the videos)
 main {
     z-index: 3;
 }
