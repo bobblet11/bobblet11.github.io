@@ -8,12 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ArchiWork.html = ArchiWork.html
 		CulinWork.html = CulinWork.html
 		index.html = index.html
-<<<<<<< HEAD
-=======
-		ArchiWork.html = ArchiWork.html
->>>>>>> 2a858af (new photos, videos, and work experience page. compressed the videos)
 		Script1.js = Script1.js
 		Script2.js = Script2.js
+		Skills.html = Skills.html
 		styleSheet1.css = styleSheet1.css
 	EndProjectSection
 EndProject
