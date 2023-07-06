@@ -358,8 +358,7 @@ article {
     top: -20px;
     left: 35px;
     margin: 0 0 0 0;
-    font-size: 1.1vw;
-    font-family: 'Times New Roman';
+    font-size: 18pt;
     font-weight: 300;
 }
 
@@ -552,7 +551,7 @@ article {
 
 #title {
     margin: 0px;
-    font-size: 2.5vw;
+    font-size: 42pt;
     font-family: 'Times New Roman';
     font-weight: 800;
 }
