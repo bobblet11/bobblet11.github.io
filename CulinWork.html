@@ -1,119 +1,194 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Benjamin Jun-jie Glover</title>
-    <link rel="stylesheet" type="text/css" href="styleSheet1.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="styleSheet1.css" />
+  </head>
 
-
-<body>
+  <body>
     <!--MAIN-->
     <main>
-        <!--TITLE CARD-->
-        <div id="titleCardContainer">
-            <header id="titleCard">
-                <!--HKU LOGO-->
-                <div id="hkuLogoContainer">
-                    <img src="images/HKU.png" id="hkuLogo" />
-                </div>
-                <!--MEDIA LINKS-->
-                <div id="photoLinksWrapper">
-                    <a href="https://github.com/bobblet11" target="_blank" class="photoLinkContainerGithub">
-                        <div>
-                            <img src="images/git-logo.png" class="photoLink">
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ben-glover-8321a627a/" target="_blank" class="photoLinkContainerLinkedin">
-                        <div>
-                            <img src="images/Linkedin-logo.png" class="photoLink">
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/ben_glover__/" target="_blank" class="photoLinkContainerInstagram">
-                        <div>
-                            <img src="images/Insta-logo.png" class="photoLink">
-                        </div>
-                    </a>
-                </div>
-                <!--TITLE-->
-                <div id="titleContainer">
-                    <h1 id="title">
-                        CULINARY EXPERIENCE
-                    </h1>
-                </div>
-                <!--CLOCK-->
-                <div id="clockContainer">
-                    <div id="clock">
+      <!--TITLE CARD-->
+      <div id="titleCardContainer">
+        <header id="titleCard">
+          <!--HKU LOGO-->
+          <div id="hkuLogoContainer">
+            <img src="images/HKU.png" id="hkuLogo" />
+          </div>
+          <!--MEDIA LINKS-->
+          <div id="photoLinksWrapper">
+            <a
+              href="https://github.com/bobblet11"
+              target="_blank"
+              class="photoLinkContainerGithub"
+            >
+              <div>
+                <img src="images/git-logo.png" class="photoLink" />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ben-glover-8321a627a/"
+              target="_blank"
+              class="photoLinkContainerLinkedin"
+            >
+              <div>
+                <img src="images/Linkedin-logo.png" class="photoLink" />
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/ben_glover__/"
+              target="_blank"
+              class="photoLinkContainerInstagram"
+            >
+              <div>
+                <img src="images/Insta-logo.png" class="photoLink" />
+              </div>
+            </a>
+          </div>
+          <!--TITLE-->
+          <div id="titleContainer">
+            <h1 id="title">CULINARY EXPERIENCE</h1>
+          </div>
+          <!--CLOCK-->
+          <div id="clockContainer">
+            <div id="clock"></div>
+          </div>
+        </header>
 
-                    </div>
-                </div>
-            </header>
+        <!--PAGE NAVIGATION-->
+        <nav id="mainNavigator">
+          <!--TO HOME-->
+          <div class="navComponent">
+            <div class="navText">
+              <a href="index.html">
+                <strong>HOME</strong>
+              </a>
+            </div>
+          </div>
+          <!--TO SKILLS-->
+          <div class="navComponent">
+            <div class="navText">
+              <a href="Skills.html">
+                <strong>MY SKILLS</strong>
+              </a>
+            </div>
+          </div>
+          <!--TO EXPERIENCE-->
+          <div class="navComponent">
+            <div class="dropdown navText">
+              <button class="dropbtn navText">
+                <strong>MY EXPERIENCE</strong>
+              </button>
+              <div class="dropdown-content red">
+                <a href="ArchiWork.html"
+                  ><strong>Architectural Experience</strong></a
+                >
+                <a href="#"><strong>Culinary Experience</strong></a>
+              </div>
+            </div>
+          </div>
+          <!--TO PROJECTS-->
+          <div class="navComponent">
+            <div class="dropdown navText">
+              <button class="dropbtn navText">
+                <strong>MY PROJECTS</strong>
+              </button>
+              <div class="dropdown-content red">
+                <a href="Pacman.html"><strong>Pacman</strong></a>
+                <a href="ChatApp.html"><strong>Chat App</strong></a>
+              </div>
+            </div>
+          </div>
+          <!--TO CONTACT INFORMATION-->
+          <div class="navComponent">
+            <div class="navText">
+              <a href="#CONTACT">
+                <strong>CONTACT ME</strong>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-
-            <!--PAGE NAVIGATION-->
-            <nav id="mainNavigator">
-                <!--TO HOME-->
-                <div class="navComponent">
-                    <div class="navText">
-                        <a href="index.html">
-                            <strong>HOME</strong>
-                        </a>
-                    </div>
-                </div>
-                <!--TO SKILLS-->
-                <div class="navComponent">
-                    <div class="navText">
-                        <a href="Skills.html">
-                            <strong>MY SKILLS</strong>
-                        </a>
-                    </div>
-                </div>
-                <!--TO EXPERIENCE-->
-                <div class="navComponent">
-
-                    <div class="dropdown navText">
-                        <button class="dropbtn navText"><strong>MY EXPERIENCE</strong></button>
-                        <div class="dropdown-content red">
-                            <a href="ArchiWork.html"><strong>Architectural Experience</strong></a>
-                            <a href="#"><strong>Culinary Experience</strong></a>
-                            <a href="#"><strong>Tech Experience</strong></a>
-                        </div>
-
-
-
-                    </div>
-                </div>
-                <!--TO PROJECTS-->
-                <div class="navComponent">
-                    <div class="navText">
-                        <a href="#PROJECTS">
-                            <strong>MY PROJECTS</strong>
-                        </a>
-                    </div>
-                </div>
-                <!--TO CONTACT INFORMATION-->
-                <div class="navComponent">
-                    <div class="navText">
-                        <a href="#CONTACT">
-                            <strong>CONTACT ME</strong>
-                        </a>
-                    </div>
-                </div>
-            </nav>
+      <div class="mainSection">
+        <div class="mainSectionContainer" style="padding-bottom: 100px">
+          <h2>Yang Shu Ten [NISEKO, JAPAN]</h2>
+          <div style="height: 300px">
+            <img
+              src="images/yang_shu_ten.jpg"
+              style="
+                float: left;
+                width: 50%;
+                height: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            />
+            <p class="internal-text">
+              I spent 2 winters working abroad in Japan as both a Chef and a
+              Server. I have learned not only several culinary skills, but also
+              tested my team working and collaboration skills by working
+              alongside co workers who did not speak my native tongue.
+            </p>
+          </div>
         </div>
 
-        <footer>
-            <div>
-                <small>
-                    ©2023 Benjamin Jun-jie Glover, LLC. All Rights Reserved.
-                </small>
-            </div>
-        </footer>
+        <div class="mainSectionContainer" style="padding-bottom: 100px">
+          <h2>Lantau Coffee Roasters [MUI WO, HONG KONG]</h2>
+          <div style="height: 300px">
+            <img
+              src="images/coffee.jpeg"
+              style="
+                float: right;
+                width: 50%;
+                height: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            />
+            <p class="internal-text">
+              I spent the Summer of 2023 working as a barista, kitchen staff,
+              and butcher at this establishment. This experience marks a pivotal
+              moment in my life since it is when I first started to learn to
+              live independently and improved my ability to interact with people
+              after facing crowds of people everyday.
+            </p>
+          </div>
+        </div>
 
+        <div class="mainSectionContainer" style="padding: 50px, 0, 50px, 0">
+          <h2>Lobster Boss [SOGO, HONG KONG]</h2>
+          <div style="height: 300px; width: 100%">
+            <img
+              src="images/kitchen.jpg"
+              style="
+                float: left;
+                width: 50%;
+                height: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+              "
+            />
+            <p class="internal-text">
+              This was one of my very first culinary jobs, I spent my weekends
+              working in a simple sandwhich stall which specialised in making
+              lobster rolls.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <small>
+            ©2023 Benjamin Jun-jie Glover, LLC. All Rights Reserved.
+          </small>
+        </div>
+      </footer>
     </main>
 
     <script src="Script1.js"></script>
-
-</body>
+  </body>
 </html>
