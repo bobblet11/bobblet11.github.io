@@ -1,98 +1,212 @@
-/* Base font size */
-html {
-    font-size: 16px; /* Default font size */
+@font-face {
+        font-family: "type-writer-thick";
+        src: url("fonts/American Typewriter Bold.ttf") format("truetype"); /* Path to your font file */
+        font-weight: normal;
+        font-style: normal;
 }
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    html {
-        font-size: 14px; /* 14px base font size */
-    }
-    h1 {
-        font-size: 1.5rem; /* 21px */
-    }
-    h2 {
-        font-size: 1.25rem; /* 17.5px */
-    }
-    p {
-        font-size: 0.875rem; /* 12.25px */
-    }
+@font-face {
+        font-family: "type-writer-thin";
+        src: url("fonts/Bulletin Typewriter MN Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    html {
-        font-size: 15px; /* 15px base font size */
-    }
-    h1 {
-        font-size: 1.75rem; /* 26.25px */
-    }
-    h2 {
-        font-size: 1.5rem; /* 22.5px */
-    }
-    p {
-        font-size: 1rem; /* 15px */
-    }
+@font-face {
+        font-family: "cheap-pine";
+        src: url("fonts/Cheap Pine Regular.otf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    html {
-        font-size: 16px; /* 16px base font size */
-    }
-    h1 {
-        font-size: 2rem; /* 32px */
-    }
-    h2 {
-        font-size: 1.75rem; /* 28px */
-    }
-    p {
-        font-size: 1rem; /* 16px */
-    }
-}
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-    html {
-        font-size: 17px; /* 17px base font size */
-    }
-    h1 {
-        font-size: 2.25rem; /* 38.25px */
-    }
-    h2 {
-        font-size: 2rem; /* 34px */
-    }
-    p {
-        font-size: 1.125rem; /* 19px */
-    }
-}
-
-/* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-    html {
-        font-size: 18px; /* 18px base font size */
-    }
-    h1 {
-        font-size: 2.5rem; /* 45px */
-    }
-    h2 {
-        font-size: 2.25rem; /* 40.5px */
-    }
-    p {
-        font-size: 1.125rem; /* 20.25px */
-    }
-}
-
-/* XX-Large devices (larger desktops) 
-   No media query since the xxl breakpoint has no upper bound on its width */
 h1 {
-    font-size: 3rem; /* 48px */
+        font-family: "type-writer-thick", Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 2.5rem; /* 40px */
+        font-family: "type-writer-thin", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+        font-family: "type-writer-thick", Arial, Helvetica, sans-serif;
 }
 
 p {
-    font-size: 1.25rem; /* 20px */
+        font-family: "type-writer-thin", Arial, Helvetica, sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        .dropdown {
+                height: 4rem;
+                width: 100vw;
+                background-color: blue;
+                padding: 0.5rem;
+                justify-content: space-between; /* Space between items */
+        }
+
+        .dropdown > div:nth-child(1) {
+                width: 25%;
+        }
+        .dropdown > div:nth-child(2) {
+                width: 50%;
+        }
+        .dropdown > div:nth-child(3) {
+                width: 25%;
+        }
+
+        .dropdown-title {
+                font-size: 3rem; /* Increased size */
+                flex: 1; /* Allow this div to take available space */
+                text-align: center; /* Center text within this div */
+        }
+
+        .hamburger {
+                margin-left: 1rem;
+        }
+
+        .cross {
+                margin-left: 1rem;
+        }
+
+
+
+
+
+
+
+        .dropdown-content div {
+                width: 100%;
+                height: 4rem;
+                padding: 0.5rem 0.5rem;
+        }
+
+        .dropdown-content {
+                width: 100%;
+        }
+
+	.dropdown-content.active {
+                display: flex;
+        }
+
+        html {
+                font-size: 16px; /* Increased base font size */
+        }
+        h1 {
+                font-size: 2.5rem; /* Increased size */
+        }
+        h2 {
+                font-size: 2rem; /* Increased size */
+        }
+        p {
+                font-size: 1.25rem; /* Increased size */
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+        .dropdown {
+                width: fit-content;
+                margin-left: 1rem;
+                margin-top: 3rem;
+                margin-right: auto;
+                background-color: red;
+                justify-content: center;
+        }
+	
+
+        html {
+                font-size: 17px; /* Increased base font size */
+        }
+        h1 {
+                font-size: 2.25rem; /* Increased size */
+        }
+        h2 {
+                font-size: 2rem; /* Increased size */
+        }
+        p {
+                font-size: 1.125rem; /* Increased size */
+        }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+        .dropdown {
+                width: fit-content;
+                margin-left: 2rem;
+                margin-top: 3rem;
+                margin-right: auto;
+                background-color: green;
+                justify-content: center;
+        }
+        html {
+                font-size: 18px; /* Increased base font size */
+        }
+        h1 {
+                font-size: 2.75rem; /* Increased size */
+        }
+        h2 {
+                font-size: 2.25rem; /* Increased size */
+        }
+        p {
+                font-size: 1.25rem; /* Increased size */
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        .dropdown {
+                width: fit-content;
+                margin-left: 2rem;
+                margin-top: 3rem;
+                margin-right: auto;
+                background-color: blueviolet;
+                justify-content: center;
+        }
+
+        html {
+                font-size: 19px; /* Increased base font size */
+        }
+        h1 {
+                font-size: 3rem; /* Increased size */
+        }
+        h2 {
+                font-size: 2.5rem; /* Increased size */
+        }
+        p {
+                font-size: 1.5rem; /* Increased size */
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+        .dropdown {
+                width: fit-content;
+                margin-left: 2rem;
+                margin-top: 3rem;
+                margin-right: auto;
+                background-color: rgb(173, 166, 180);
+                justify-content: center;
+        }
+
+        /* Default font size */
+        body {
+                font-size: 18px; /* Increased base font size */
+        }
+
+        h1 {
+                font-size: 3.5rem; /* Increased size */
+        }
+
+        h2 {
+                font-size: 3rem; /* Increased size */
+        }
+
+        h3 {
+                font-size: 2rem; /* Increased size */
+        }
+
+        p {
+                font-size: 1.5rem; /* Increased size */
+        }
 }

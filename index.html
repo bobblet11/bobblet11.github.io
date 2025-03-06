@@ -8,34 +8,94 @@
                 />
                 <title>Picana's</title>
                 <link rel="stylesheet" href="reset.css" />
-		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="dropdown.css">
-		
+                <link rel="stylesheet" href="dropdown.css" />
+                <link rel="stylesheet" href="index.css" />
         </head>
 
         <body>
                 <header>
                         <article class="dropdown" id="dropdown">
-                                <div class="hamburger" id="hamburger">
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
+                                <div>
+                                        <div class="hamburger" id="hamburger">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="100%"
+                                                        height="100%"
+                                                        viewBox="0 0 30 20"
+                                                >
+                                                        <rect
+                                                                width="30"
+                                                                height="4"
+                                                                fill="black"
+                                                        />
+                                                        <rect
+                                                                y="8"
+                                                                width="30"
+                                                                height="4"
+                                                                fill="black"
+                                                        />
+                                                        <rect
+                                                                y="16"
+                                                                width="30"
+                                                                height="4"
+                                                                fill="black"
+                                                        />
+                                                </svg>
+                                        </div>
+
+                                        <div class="cross" id="cross">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="100%"
+                                                        height="100%"
+                                                        viewBox="0 0 30 30"
+                                                >
+                                                        <line
+                                                                x1="5"
+                                                                y1="5"
+                                                                x2="25"
+                                                                y2="25"
+                                                                stroke="black"
+                                                                stroke-width="4"
+                                                        />
+                                                        <line
+                                                                x1="25"
+                                                                y1="5"
+                                                                x2="5"
+                                                                y2="25"
+                                                                stroke="black"
+                                                                stroke-width="4"
+                                                        />
+                                                </svg>
+                                        </div>
                                 </div>
-                                <h2>BOOK NOW</h2>
+
+                                <div class="dropdown-title">
+                                        <h2>BOOK NOW</h2>
+                                </div>
+                                <div></div>
                         </article>
+
+                        <nav class="dropdown-content" id="dropdown-content">
+                                <div><a href="#">Link 1</a></div>
+                                <div><a href="#">Link 1</a></div>
+                                <div><a href="#">Link 1</a></div>
+                        </nav>
                 </header>
 
-		<script src="dropdown.js"></script> <!-- DROPDOWN -->
+                <script src="dropdown.js"></script>
 
-
-	
-                <main></main>
+                <main>
+                        <h1>Typewriter A</h1>
+                        <h2>Typewriter B</h2>
+                        <h3>Cheap pine</h3>
+                </main>
 
                 <footer>
-                        <h3>
+                        <p>
                                 Shop A, Ground Floor, No. 27 - 29 Elgin
                                 Street,Central, Hong Kong
-                        </h3>
+                        </p>
                 </footer>
         </body>
 </html>
