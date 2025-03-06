@@ -1,0 +1,98 @@
+/* Base font size */
+html {
+    font-size: 16px; /* Default font size */
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 14px; /* 14px base font size */
+    }
+    h1 {
+        font-size: 1.5rem; /* 21px */
+    }
+    h2 {
+        font-size: 1.25rem; /* 17.5px */
+    }
+    p {
+        font-size: 0.875rem; /* 12.25px */
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 15px; /* 15px base font size */
+    }
+    h1 {
+        font-size: 1.75rem; /* 26.25px */
+    }
+    h2 {
+        font-size: 1.5rem; /* 22.5px */
+    }
+    p {
+        font-size: 1rem; /* 15px */
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    html {
+        font-size: 16px; /* 16px base font size */
+    }
+    h1 {
+        font-size: 2rem; /* 32px */
+    }
+    h2 {
+        font-size: 1.75rem; /* 28px */
+    }
+    p {
+        font-size: 1rem; /* 16px */
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    html {
+        font-size: 17px; /* 17px base font size */
+    }
+    h1 {
+        font-size: 2.25rem; /* 38.25px */
+    }
+    h2 {
+        font-size: 2rem; /* 34px */
+    }
+    p {
+        font-size: 1.125rem; /* 19px */
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    html {
+        font-size: 18px; /* 18px base font size */
+    }
+    h1 {
+        font-size: 2.5rem; /* 45px */
+    }
+    h2 {
+        font-size: 2.25rem; /* 40.5px */
+    }
+    p {
+        font-size: 1.125rem; /* 20.25px */
+    }
+}
+
+/* XX-Large devices (larger desktops) 
+   No media query since the xxl breakpoint has no upper bound on its width */
+h1 {
+    font-size: 3rem; /* 48px */
+}
+
+h2 {
+    font-size: 2.5rem; /* 40px */
+}
+
+p {
+    font-size: 1.25rem; /* 20px */
+}

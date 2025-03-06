@@ -1,0 +1,50 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15; /* Improve readability */
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+}
+
+body {
+    font-family: sans-serif; /* Default font */
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Line height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit; /* Inherit font size */
+    font-weight: bold; /* Bold headings */
+}
+
+p {
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+ul, ol {
+    list-style: none; /* Remove default list styles */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color */
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+table {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full width */
+}
+
+th, td {
+    text-align: left; /* Left align text */
+    padding: 0.5em; /* Padding for table cells */
+}

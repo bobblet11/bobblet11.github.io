@@ -1,0 +1,49 @@
+.dropdown {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        background-color: red;
+        padding: 1rem;
+        gap: 1rem;
+}
+
+.hamburger {
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.dropdown > h2 {
+        transition: all 0.05s ease;
+}
+
+.bar {
+        height: 4px;
+        background-color: #333;
+        transition: all 0.1s ease;
+}
+
+.bar:nth-child(2) {
+        transition: all 0s ease;
+}
+
+/* Active state styles for the hamburger */
+.dropdown.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+}
+
+.dropdown.active .bar:nth-child(2) {
+        opacity: 0; /* Hide the middle bar */
+}
+
+.dropdown.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.dropdown.active h2 {
+        opacity: 0; /* Hide the BOOK NOW h2 */
+}
