@@ -15,3 +15,28 @@ window.onclick = function (event) {
                 dropdown.classList.remove("active");
         }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+        const dropdownContent = document.getElementById("dropdown-content");
+
+        // Function to check if the content is overflowing
+        function checkOverflow() {
+                console.log("checking overflow");
+                if (
+                        dropdownContent.scrollHeight >
+                        dropdownContent.clientHeight
+                ) {
+                        dropdownContent.classList.add("show-scrollbar");
+                        console.log("show bar");
+                } else {
+                        dropdownContent.classList.remove("show-scrollbar");
+                        console.log("dont show bar");
+                }
+        }
+
+        // Initial check
+        checkOverflow();
+
+        // Optional: Check on window resize if the dropdown is responsive
+        window.addEventListener("resize", checkOverflow);
+});
