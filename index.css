@@ -131,7 +131,7 @@ p {
 }
 
 .white {
-        color: white;
+        color: #ece5db;
 }
 
 .spoiler-content {
@@ -139,7 +139,6 @@ p {
         overflow: hidden; /* Hide overflow */
         transition: max-height 0.5s ease; /* Smooth transition */
 }
-
 
 .spoiler {
         cursor: pointer; /* Change cursor to pointer for clickable text */
@@ -152,6 +151,11 @@ p {
         color: blue; /* Change color to indicate it's clickable */
         text-decoration: underline; /* Underline the text */
         display: none;
+}
+
+.text-block {
+        text-align: justify;
+        word-break: keep-all;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -170,7 +174,82 @@ p {
                 padding-top: 0rem;
                 text-decoration: underline;
         }
-        .carousell_img {
+
+        .carousel-container {
+                width: 100vw;
+                aspect-ratio: 9/16;
+                padding: 0 1rem;
+        }
+        .carousel {
+                position: relative;
+                max-width: 100%; /* Full width for mobile */
+                margin: auto;
+                overflow: hidden;
+                border: #2c1601 1px solid;
+        }
+        .slides {
+                display: flex;
+                transition: transform 0.5s ease;
+        }
+        .slide {
+                min-width: 100%; /* Full width for each slide */
+                transition: opacity 0.5s ease;
+        }
+
+        .slide img {
+                width: 100%; /* Fill container width */
+                height: 100%; /* Fill container height */
+                object-fit: cover; /* Maintain aspect ratio */
+                aspect-ratio: 9/16;
+        }
+        .buttons {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+        }
+        .button {
+                background: rgba(0, 0, 0, 0);
+                color: #ece5db;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                
+                transition: background 0.3s; /* Smooth transition */
+        }
+
+        .buttons button:first-child {
+                padding-left: 5%;
+                padding-right: 20%;
+        }
+        .buttons button:last-child {
+                padding-right: 5%;
+                padding-left: 20%;
+        }
+        .buttons button:first-child:hover {
+                background: linear-gradient(
+                        to right,
+                        rgb(0, 0, 0, 0.6),
+                        rgb(0, 0, 0, 0)
+                );
+        }
+
+        .buttons button:last-child:hover {
+                background: linear-gradient(
+                        to left,
+                        rgb(0, 0, 0, 0.6),
+                        rgb(0, 0, 0, 0)
+                );
+        }
+        .menu_img {
+                width: 100vw;
+                padding: 0 1rem;
+        }
+
+        .promotion_img {
                 width: 100vw;
                 padding: 0 1rem;
         }
@@ -184,6 +263,38 @@ p {
                 text-align: center;
         }
 
+        .text-block {
+                width: 100vw;
+                padding: 0.6rem 1.5rem 2rem 1.5rem;
+                font-weight: 600;
+        }
+
+        .text-block * {
+                margin: 0;
+        }
+
+        .text-block a {
+                font-size: 2rem;
+                color: #2c1601;
+        }
+
+        .text-block div:last-child {
+                padding: 0 2rem;
+                padding-top: 7rem;
+                padding-bottom: 2rem;
+        }
+
+        .text-block a {
+                display: none;
+        }
+
+        .text-block .spoiler-content {
+                max-height: fit-content;
+        }
+
+        .spoiler-content {
+                margin-top: 2rem;
+        }
         h4 em {
                 font-style: normal;
                 font-size: 1.7rem;
@@ -196,7 +307,7 @@ p {
                 width: 100vw;
                 height: 100vh;
                 overflow: hidden; /* Ensures no overflow from the video */
-                color: white;
+                color: #ece5db;
         }
 
         .background-video {
@@ -231,7 +342,7 @@ p {
                 bottom: 20px; /* Adjusts distance from the bottom */
                 transform: translateX(-50%); /* Centers the footer */
                 text-align: center; /* Centers text inside footer */
-                color: white; /* Change color as needed */
+                color: #ece5db; /* Change color as needed */
         }
         header {
                 z-index: 2;

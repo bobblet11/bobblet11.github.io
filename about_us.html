@@ -30,19 +30,19 @@
                                                                 <rect
                                                                         width="30"
                                                                         height="4"
-                                                                        fill="white"
+                                                                        fill="#ece5db"
                                                                 />
                                                                 <rect
                                                                         y="8"
                                                                         width="30"
                                                                         height="4"
-                                                                        fill="white"
+                                                                        fill="#ece5db"
                                                                 />
                                                                 <rect
                                                                         y="16"
                                                                         width="30"
                                                                         height="4"
-                                                                        fill="white"
+                                                                        fill="#ece5db"
                                                                 />
                                                         </svg>
                                                 </div>
@@ -59,7 +59,7 @@
                                                                         y1="5"
                                                                         x2="25"
                                                                         y2="25"
-                                                                        stroke="white"
+                                                                        stroke="#ece5db"
                                                                         stroke-width="4"
                                                                 />
                                                                 <line
@@ -67,7 +67,7 @@
                                                                         y1="5"
                                                                         x2="5"
                                                                         y2="25"
-                                                                        stroke="white"
+                                                                        stroke="#ece5db"
                                                                         stroke-width="4"
                                                                 />
                                                         </svg>
@@ -134,7 +134,7 @@
                         <div class="third-content">
                                 <h1>ABOUT US</h1>
 
-                                <div class="undertitle">
+                                <div class="text-block">
                                         <p>
                                                 Welcome to Picanhas', a new
                                                 culinary experience from the
@@ -154,18 +154,21 @@
                                                 hot chocolate sauce.
                                         </p>
 
-                                        <a
-                                                class="spoiler"
-                                                id="spoiler"
-                                                onclick="toggleSpoiler()"
-                                        >
-                                                MORE...
-                                        </a>
+                                        <div>
+                                                <a
+                                                        class="spoiler"
+                                                        id="spoiler"
+                                                        onclick="toggleSpoiler()"
+                                                >
+                                                        MORE...
+                                                </a>
+                                        </div>
 
                                         <div
                                                 class="spoiler-content"
                                                 id="spoilerContent"
-                                                ><p>
+                                        >
+                                                <p>
                                                         At Picanhas', we focus
                                                         on delivering great
                                                         value steaks and
@@ -227,13 +230,15 @@
                                                 </p>
                                         </div>
 
-                                        <a
-                                                class="spoiler-close"
-                                                id="spoiler-close"
-                                                onclick="toggleSpoiler()"
-                                        >
-                                                LESS
-                                        </a>
+                                        <div>
+                                                <a
+                                                        class="spoiler-close"
+                                                        id="spoiler-close"
+                                                        onclick="toggleSpoiler()"
+                                                >
+                                                        LESS
+                                                </a>
+                                        </div>
 
                                         <div>
                                                 <img
@@ -258,7 +263,9 @@
                                                                 "spoiler-close"
                                                         );
                                                 if (
-                                                        spoilerContent.style.maxHeight === "0px"
+                                                        spoilerContent.style
+                                                                .maxHeight ===
+                                                        "0px"
                                                 ) {
                                                         spoilerContent.style.maxHeight =
                                                                 spoilerContent.scrollHeight +
@@ -268,7 +275,8 @@
                                                         spoilerCloseLink.style.display =
                                                                 "inline"; // Hide the "MORE..." link
                                                 } else {
-                                                        spoilerContent.style.maxHeight ="0px";
+                                                        spoilerContent.style.maxHeight =
+                                                                "0px";
                                                         spoilerLink.style.display =
                                                                 "inline"; // Hide the "MORE..." link
                                                         spoilerCloseLink.style.display =

@@ -5,7 +5,6 @@ const dropwdownTitle = document.getElementById("dropdown-title");
 dropdown.addEventListener("click", () => {
         dropdown.classList.toggle("active");
         dropdownContent.classList.toggle("active");
-        dropwdownTitle.classList.toggle("active")
 });
 
 // Close the dropdown if the user clicks outside of it

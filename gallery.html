@@ -102,6 +102,9 @@
                                         </div>
 
                                         <div>
+                                                <a href="#"><h4>MENU</h4></a>
+                                        </div>
+                                        <div>
                                                 <a href="#"><h4>GALLERY</h4></a>
                                         </div>
                                         <div>
@@ -123,65 +126,112 @@
                         <script src="dropdown.js"></script>
 
                         <div class="main-content">
-                                <h1>MENU</h1>
+                                <h1>GALLERY</h1>
+                                <div class="carousel-container">
+                                        <div class="carousel">
+                                                <div class="slides">
+                                                        <div class="slide">
+                                                                <img
+                                                                        src="images/churro2.jpg"
+                                                                        alt="Image 1"
+                                                                />
+                                                        </div>
+                                                        <div class="slide">
+                                                                <img
+                                                                        src="images/pic main true 2 .jpg"
+                                                                        alt="Image 2"
+                                                                />
+                                                        </div>
+                                                        <div class="slide">
+                                                                <img
+                                                                        src="images/picanha  raw 2.jpg"
+                                                                        alt="Image 3"
+                                                                />
+                                                        </div>
+                                                </div>
+                                                <div class="buttons">
+                                                        <button
+                                                                class="button"
+                                                                id="prev"
+                                                        >
+                                                                ❮
+                                                        </button>
+                                                        <button
+                                                                class="button"
+                                                                id="next"
+                                                        >
+                                                                ❯
+                                                        </button>
 
-                                <div>
-                                        <div>
-                                                <h4>
-                                                        <em> LUNCH </em>
-                                                </h4>
-                                                <div class="menu-img">
-                                                        <img
-                                                                src="images/T-Bone Tuesday.jpg"
-                                                        />
-                                                </div>
-                                                <div
-                                                        class="undertitle icon-text"
-                                                >
-                                                        <div class="icon">
-                                                                <img
-                                                                        src="images/Download.svg"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <a
-                                                                        ><h4>
-                                                                                download
-                                                                                PDF
-                                                                        </h4></a
-                                                                >
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <div>
-                                                <h4>
-                                                        <em> DINNER </em>
-                                                </h4>
-                                                <div class="menu-img">
-                                                        <img
-                                                                src="images/T-Bone Tuesday.jpg"
-                                                        />
-                                                </div>
-                                                <div
-                                                        class="undertitle icon-text"
-                                                >
-                                                        <div class="icon">
-                                                                <img
-                                                                        src="images/Download.svg"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <a
-                                                                        ><h4>
-                                                                                download
-                                                                                PDF
-                                                                        </h4></a
-                                                                >
-                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
+
+                        <script>
+                                let index = 0;
+
+                                function showSlide(n) {
+                                        const slides =
+                                                document.querySelectorAll(
+                                                        ".slide"
+                                                );
+
+                                        if (n >= slides.length) {
+                                                index = 0;
+                                        }
+                                        if (n < 0) {
+                                                index = slides.length - 1;
+                                        }
+
+                                        // Update the transform based on the current index
+                                        slides.forEach((slide) => {
+                                                slide.style.transform = `translateX(${
+                                                        -index * 100
+                                                }%)`;
+                                        });
+                                }
+
+                                document.getElementById(
+                                        "next"
+                                ).addEventListener("click", () => {
+                                        index++;
+                                        showSlide(index);
+                                });
+
+                                document.getElementById(
+                                        "prev"
+                                ).addEventListener("click", () => {
+                                        index--;
+                                        showSlide(index);
+                                });
+
+                                // Swipe functionality
+                                let startX;
+
+                                document.querySelector(
+                                        ".carousel"
+                                ).addEventListener("touchstart", (e) => {
+                                        startX = e.touches[0].clientX;
+                                });
+
+                                document.querySelector(
+                                        ".carousel"
+                                ).addEventListener("touchmove", (e) => {
+                                        const endX = e.touches[0].clientX;
+                                        const diffX = startX - endX;
+
+                                        if (diffX > 50) {
+                                                index++;
+                                                showSlide(index);
+                                        } else if (diffX < -50) {
+                                                index--;
+                                                showSlide(index);
+                                        }
+                                });
+
+                                showSlide(index); // Initial call
+                        </script>
                 </main>
         </body>
 </html>
