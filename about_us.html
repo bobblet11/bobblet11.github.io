@@ -95,30 +95,36 @@
                                                         ><h4>HOME</h4></a
                                                 >
                                         </div>
-                                        <div>
-                                                <a href="#"
-                                                        ><h4>ABOUT US</h4></a
-                                                >
-                                        </div>
 
                                         <div>
-                                                <a href="#"><h4>MENU</h4></a>
+                                                <a href="promotions.html"
+                                                        ><h4>PROMOTIONS</h4></a
+                                                >
                                         </div>
                                         <div>
-                                                <a href="#"><h4>GALLERY</h4></a>
+                                                <a href="menu.html"
+                                                        ><h4>MENU</h4></a
+                                                >
                                         </div>
                                         <div>
-                                                <a href="#"
+                                                <a href="gallery.html"
+                                                        ><h4>GALLERY</h4></a
+                                                >
+                                        </div>
+                                        <div>
+                                                <a href="/book_now"
                                                         ><h4>BOOK NOW</h4></a
                                                 >
                                         </div>
                                         <div>
-                                                <a href="#"
+                                                <a href="contact_us.html"
                                                         ><h4>CONTACT US</h4></a
                                                 >
                                         </div>
                                         <div>
-                                                <a href="#"><h4>REVIEWS</h4></a>
+                                                <a href="reviews.html"
+                                                        ><h4>REVIEWS</h4></a
+                                                >
                                         </div>
                                 </nav>
                         </header>
@@ -154,7 +160,10 @@
                                                 hot chocolate sauce.
                                         </p>
 
-                                        <div>
+                                        <div
+                                                class="spoiler-container more"
+                                                id="more"
+                                        >
                                                 <a
                                                         class="spoiler"
                                                         id="spoiler"
@@ -230,7 +239,10 @@
                                                 </p>
                                         </div>
 
-                                        <div>
+                                        <div
+                                                class="spoiler-container active less"
+                                                id="less"
+                                        >
                                                 <a
                                                         class="spoiler-close"
                                                         id="spoiler-close"
@@ -240,7 +252,7 @@
                                                 </a>
                                         </div>
 
-                                        <div>
+                                        <div class="about-us-footer">
                                                 <img
                                                         src="images/Picanha logo color.svg"
                                                         alt="Image description"
@@ -262,6 +274,15 @@
                                                         document.getElementById(
                                                                 "spoiler-close"
                                                         );
+                                                const spoilerLinkContainer =
+                                                        document.getElementById(
+                                                                "more"
+                                                        );
+                                                const spoilerLinkCloseContainer =
+                                                        document.getElementById(
+                                                                "less"
+                                                        );
+
                                                 if (
                                                         spoilerContent.style
                                                                 .maxHeight ===
@@ -274,6 +295,12 @@
                                                                 "none"; // Hide the "MORE..." link
                                                         spoilerCloseLink.style.display =
                                                                 "inline"; // Hide the "MORE..." link
+                                                        spoilerLinkContainer.classList.toggle(
+                                                                "active"
+                                                        );
+                                                        spoilerLinkCloseContainer.classList.toggle(
+                                                                "active"
+                                                        );
                                                 } else {
                                                         spoilerContent.style.maxHeight =
                                                                 "0px";
@@ -281,6 +308,12 @@
                                                                 "inline"; // Hide the "MORE..." link
                                                         spoilerCloseLink.style.display =
                                                                 "none"; // Hide the "MORE..." link
+                                                        spoilerLinkContainer.classList.toggle(
+                                                                "active"
+                                                        );
+                                                        spoilerLinkCloseContainer.classList.toggle(
+                                                                "active"
+                                                        );
                                                 }
                                         }
                                 </script>
