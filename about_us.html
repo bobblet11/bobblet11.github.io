@@ -87,7 +87,7 @@
                                 </article>
 
                                 <nav
-                                        class="dropdown-content background-brown-two"
+                                        class="dropdown-content background-brown-two dropdown-colour"
                                         id="dropdown-content"
                                 >
                                         <div>
@@ -161,19 +161,6 @@
                                         </p>
 
                                         <div
-                                                class="spoiler-container more"
-                                                id="more"
-                                        >
-                                                <a
-                                                        class="spoiler"
-                                                        id="spoiler"
-                                                        onclick="toggleSpoiler()"
-                                                >
-                                                        MORE...
-                                                </a>
-                                        </div>
-
-                                        <div
                                                 class="spoiler-content"
                                                 id="spoilerContent"
                                         >
@@ -240,15 +227,14 @@
                                         </div>
 
                                         <div
-                                                class="spoiler-container active less"
-                                                id="less"
+                                                class="spoiler-container"
+                                                id="spoiler-container"
                                         >
                                                 <a
-                                                        class="spoiler-close"
-                                                        id="spoiler-close"
                                                         onclick="toggleSpoiler()"
+                                                        id="spoiler-container-a"
                                                 >
-                                                        LESS
+                                                        MORE ...
                                                 </a>
                                         </div>
 
@@ -268,50 +254,32 @@
                                                         );
                                                 const spoilerLink =
                                                         document.getElementById(
-                                                                "spoiler"
-                                                        );
-                                                const spoilerCloseLink =
-                                                        document.getElementById(
-                                                                "spoiler-close"
-                                                        );
-                                                const spoilerLinkContainer =
-                                                        document.getElementById(
-                                                                "more"
-                                                        );
-                                                const spoilerLinkCloseContainer =
-                                                        document.getElementById(
-                                                                "less"
+                                                                "spoiler-container-a"
                                                         );
 
+                                                // Check if the content is collapsed
                                                 if (
                                                         spoilerContent.style
                                                                 .maxHeight ===
-                                                        "0px"
+                                                                "0px" ||
+                                                        spoilerContent.style
+                                                                .maxHeight ===
+                                                                ""
                                                 ) {
                                                         spoilerContent.style.maxHeight =
                                                                 spoilerContent.scrollHeight +
-                                                                "px";
-                                                        spoilerLink.style.display =
-                                                                "none"; // Hide the "MORE..." link
-                                                        spoilerCloseLink.style.display =
-                                                                "inline"; // Hide the "MORE..." link
-                                                        spoilerLinkContainer.classList.toggle(
-                                                                "active"
-                                                        );
-                                                        spoilerLinkCloseContainer.classList.toggle(
+                                                                "px"; // Set to full height
+                                                        spoilerLink.innerText =
+                                                                "LESS ..."; // Change link text
+                                                        spoilerContent.classList.add(
                                                                 "active"
                                                         );
                                                 } else {
                                                         spoilerContent.style.maxHeight =
-                                                                "0px";
-                                                        spoilerLink.style.display =
-                                                                "inline"; // Hide the "MORE..." link
-                                                        spoilerCloseLink.style.display =
-                                                                "none"; // Hide the "MORE..." link
-                                                        spoilerLinkContainer.classList.toggle(
-                                                                "active"
-                                                        );
-                                                        spoilerLinkCloseContainer.classList.toggle(
+                                                                "0px"; // Collapse the content
+                                                        spoilerLink.innerText =
+                                                                "MORE ..."; // Change link text
+                                                        spoilerContent.classList.remove(
                                                                 "active"
                                                         );
                                                 }

@@ -18,7 +18,9 @@
         font-weight: normal;
         font-style: normal;
 }
-
+.carousel-container-2 {
+        display: none;
+}
 html,
 body {
         margin: 0;
@@ -71,7 +73,7 @@ p {
 }
 
 .main-content {
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
 }
 .overlay {
         background: linear-gradient(
@@ -140,10 +142,14 @@ p {
         color: #ece5db;
 }
 
+.dropdown-colour {
+        color: #ece5db;
+}
+
 .spoiler-content {
         max-height: 0px; /* Start with a max-height of 0 */
         overflow: hidden; /* Hide overflow */
-        transition: max-height 0.5s ease; /* Smooth transition */
+        transition: max-height 0.5s ease, margin 0.1s; /* Smooth transition */
 }
 
 .spoiler {
@@ -162,6 +168,8 @@ p {
 .spoiler-container {
         z-index: 100;
         position: relative;
+        cursor: pointer;
+        text-decoration: underline;
 }
 
 .text-block {
@@ -328,77 +336,14 @@ body {
                 padding-top: 0rem;
                 text-decoration: underline;
         }
-
         .carousel-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
                 width: 100vw;
-                aspect-ratio: 9/16;
-                padding: 0 1rem;
-        }
-        .carousel {
-                position: relative;
-                max-width: 100%; /* Full width for mobile */
-                margin: auto;
-                overflow: hidden;
-                border: #2c1601 1px solid;
-                border-radius: 5px;
-        }
-        .slides {
-                display: flex;
-                transition: transform 0.5s ease;
-        }
-        .slide {
-                min-width: 100%; /* Full width for each slide */
-                transition: opacity 0.5s ease;
+                padding: 1rem 1rem;
         }
 
-        .slide img {
-                width: 100%; /* Fill container width */
-                height: 100%; /* Fill container height */
-                object-fit: cover; /* Maintain aspect ratio */
-                aspect-ratio: 9/16;
-        }
-        .buttons {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-                transform: translateY(-50%);
-        }
-        .button {
-                background: rgba(0, 0, 0, 0);
-                color: #ece5db;
-                border: none;
-                cursor: pointer;
-                padding: 0;
-
-                transition: background 0.3s; /* Smooth transition */
-        }
-
-        .buttons button:first-child {
-                padding-left: 5%;
-                padding-right: 20%;
-        }
-        .buttons button:last-child {
-                padding-right: 5%;
-                padding-left: 20%;
-        }
-        .buttons button:first-child:hover {
-                background: linear-gradient(
-                        to right,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
-
-        .buttons button:last-child:hover {
-                background: linear-gradient(
-                        to left,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
         .menu {
                 width: 100vw;
                 padding: 0.6rem 1rem 2rem 1rem;
@@ -797,78 +742,14 @@ body {
                 padding-top: 0rem;
                 text-decoration: underline;
         }
-
         .carousel-container {
-                width: 80vw;
-                height: 90vh;
-                margin: auto;
-        }
-        .carousel {
-                position: relative;
-                max-width: 100%; /* Full width for mobile */
-                margin: auto;
-                overflow: hidden;
-                border: #2c1601 1px solid;
-                border-radius: 5px;
-        }
-        .slides {
                 display: flex;
-                transition: transform 0.5s ease;
-        }
-        .slide {
-                min-width: 100%; /* Full width for each slide */
-                transition: opacity 0.5s ease;
-        }
-
-        .slide img {
-                width: 100%; /* Fill container width */
-                height: 100%; /* Fill container height */
-                object-fit: cover; /* Maintain aspect ratio */
-                aspect-ratio: 9/16;
-                background-position: center; /* Center the image */
-        }
-        .buttons {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-                transform: translateY(-50%);
-        }
-        .button {
-                background: rgba(0, 0, 0, 0);
-                color: #ece5db;
-                border: none;
-                cursor: pointer;
-                padding: 0;
-
-                transition: background 0.3s; /* Smooth transition */
+                flex-direction: column;
+                gap: 2.5rem;
+                width: 100vw;
+                padding: 1rem 4rem;
         }
 
-        .buttons button:first-child {
-                padding-left: 5%;
-                padding-right: 20%;
-        }
-        .buttons button:last-child {
-                padding-right: 5%;
-                padding-left: 20%;
-        }
-        .buttons button:first-child:hover {
-                background: linear-gradient(
-                        to right,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
-
-        .buttons button:last-child:hover {
-                background: linear-gradient(
-                        to left,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
         .menu_img {
                 width: 100vw;
                 padding: 0 1rem;
@@ -1308,80 +1189,14 @@ body {
                 padding-top: 0rem;
                 text-decoration: underline;
         }
-
         .carousel-container {
-                width: 80vw;
-                height: 90vh;
-                margin: auto;
-        }
-        .carousel {
-                position: relative;
-                max-width: 100%; /* Full width for mobile */
-                margin: auto;
-                overflow: hidden;
-                border: #2c1601 1px solid;
-                border-radius: 5px;
-                height: 100%;
-        }
-        .slides {
                 display: flex;
-                transition: transform 0.5s ease;
-                height: 100%;
-        }
-        .slide {
-                min-width: 100%; /* Full width for each slide */
-                transition: opacity 0.5s ease;
+                flex-direction: column;
+                gap: 3rem;
+                width: 100vw;
+                padding: 1rem 4rem;
         }
 
-        .slide img {
-                width: 100%; /* Fill container width */
-                height: 100%; /* Fill container height */
-                object-fit: cover; /* Maintain aspect ratio */
-
-                background-position: center; /* Center the image */
-        }
-        .buttons {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-                transform: translateY(-50%);
-        }
-        .button {
-                background: rgba(0, 0, 0, 0);
-                color: #ece5db;
-                border: none;
-                cursor: pointer;
-                padding: 0;
-
-                transition: background 0.3s; /* Smooth transition */
-        }
-
-        .buttons button:first-child {
-                padding-left: 5%;
-                padding-right: 20%;
-        }
-        .buttons button:last-child {
-                padding-right: 5%;
-                padding-left: 20%;
-        }
-        .buttons button:first-child:hover {
-                background: linear-gradient(
-                        to right,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
-
-        .buttons button:last-child:hover {
-                background: linear-gradient(
-                        to left,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
         .menu_img {
                 width: 100vw;
                 padding: 0 1rem;
@@ -1650,7 +1465,7 @@ body {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1259px) {
         /* .dropdown {
                 width: fit-content;
                 margin-left: 2rem;
@@ -1821,78 +1636,13 @@ body {
         }
 
         .carousel-container {
-                width: 80vw;
-                height: 90vh;
-                margin: auto;
-        }
-        .carousel {
-                position: relative;
-                max-width: 100%; /* Full width for mobile */
-                margin: auto;
-                overflow: hidden;
-                border: #2c1601 1px solid;
-                border-radius: 5px;
-                height: 100%;
-        }
-        .slides {
                 display: flex;
-                transition: transform 0.5s ease;
-                height: 100%;
-        }
-        .slide {
-                min-width: 100%; /* Full width for each slide */
-                transition: opacity 0.5s ease;
+                flex-direction: column;
+                gap: 3rem;
+                width: 100vw;
+                padding: 1rem 4rem;
         }
 
-        .slide img {
-                width: 100%; /* Fill container width */
-                height: 100%; /* Fill container height */
-                object-fit: cover; /* Maintain aspect ratio */
-
-                background-position: center; /* Center the image */
-        }
-        .buttons {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-                transform: translateY(-50%);
-        }
-        .button {
-                background: rgba(0, 0, 0, 0);
-                color: #ece5db;
-                border: none;
-                cursor: pointer;
-                padding: 0;
-
-                transition: background 0.3s; /* Smooth transition */
-        }
-
-        .buttons button:first-child {
-                padding-left: 5%;
-                padding-right: 20%;
-        }
-        .buttons button:last-child {
-                padding-right: 5%;
-                padding-left: 20%;
-        }
-        .buttons button:first-child:hover {
-                background: linear-gradient(
-                        to right,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
-
-        .buttons button:last-child:hover {
-                background: linear-gradient(
-                        to left,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
-        }
         .menu_img {
                 width: 100vw;
                 padding: 0 1rem;
@@ -2158,7 +1908,7 @@ body {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
         .socials {
                 display: flex;
                 width: 100%;
@@ -2166,6 +1916,7 @@ body {
 
                 justify-content: space-around;
                 gap: 1.2rem;
+                margin-top: 4rem;
                 padding: 3rem 2rem 0.5rem 2rem;
                 padding-bottom: 3rem;
         }
@@ -2179,16 +1930,20 @@ body {
 
         .reviews-container {
                 width: 100vw;
-                padding: 0.6rem 1.5rem 1rem 1.5rem;
+                padding: 2rem 15rem 1rem 15rem;
                 text-align: center;
                 display: flex;
-                flex-direction: column;
-                gap: 5rem;
+                flex-direction: row;
+                justify-content: center;
         }
 
         .contacts_container {
+                margin-top: 12rem;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                width: 100vw;
+                height: 21rem;
+                padding: 0 4rem;
         }
 
         .contacts {
@@ -2196,14 +1951,27 @@ body {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.5rem;
+                width: 80%;
+                margin-left: 3rem;
         }
 
         .contacts h1 {
-                align-self: center;
+                margin-bottom: 0.5rem;
+                align-self: left;
+        }
+
+        .contacts .icon img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+        }
+
+        .ex img {
+                width: 200%;
+                height: 200%;
         }
 
         .contacts .icon-text {
-                padding-left: 2rem;
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
                 gap: 2rem;
@@ -2212,41 +1980,58 @@ body {
                 align-items: start;
         }
 
-        .contacts img {
+        .contacts_image {
+                padding: 1rem;
                 height: 100%;
-                width: 100%;
+                width: 35%;
+                margin: auto 0;
+                margin-right: 5rem;
+                aspect-ratio: 1/1;
         }
         .contacts .icon-text div p {
                 margin: auto 0;
         }
 
         .contacts .icon {
-                min-width: 2.5rem;
+                min-width: 3rem;
                 aspect-ratio: 1/1;
         }
 
-        .contacts_image {
-                padding: 1rem;
-                margin-top: 2rem;
-        }
-
         .hours_container {
+                margin-top: 5rem;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                width: 100vw;
+                height: 30rem;
+                overflow: hidden;
+                padding: 0 4rem;
         }
 
         .hours {
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
+                align-items: flex-start;
+                gap: 0.5rem;
+                width: 80%;
+                margin-left: 3rem;
+        }
+
+        .hours h1 {
+                margin-bottom: 0.5rem;
+                align-self: left;
         }
 
         .hours-maps {
                 padding: 1rem;
-                margin-top: 0.5rem;
+                width: 40%;
+                height: 100%;
+                overflow: hidden;
+                margin-right: 5rem;
         }
 
         .review {
+                min-width: 20rem;
+                max-width: 25rem;
         }
 
         .review em {
@@ -2255,8 +2040,9 @@ body {
         }
 
         .review_image {
-                padding: 0.5rem;
+                padding: 4rem;
                 padding-bottom: 0;
+                padding-top: 1rem;
         }
         .review_image img {
                 border-radius: 50%;
@@ -2306,95 +2092,76 @@ body {
                 padding-top: 0rem;
                 text-decoration: underline;
         }
+
         .carousel-container {
-                margin: auto;
-                overflow: hidden; /* Ensure no overflow */
-                padding: 5px;
-                aspect-ratio: 9 / 16; /* Maintain aspect ratio */
-                position: relative; /* Set to relative for absolute positioning of buttons */
-                max-width: 40vw; /* Set a max-width for the carousel */
-                /* Adjust this value as needed for your layout */
+                display: none;
         }
-
-        .carousel {
-                position: relative;
-                margin: auto;
+        .car-container-container {
+                max-width: 95vw;
                 overflow: hidden;
-                border: #2c1601 1px solid;
-                border-radius: 5px;
-                width: 100%; /* Full width of the container */
+                margin: 0 auto;
         }
-
-        .slides {
+        .carousel-container-2 {
+                background-color: #2c1601;
+                height: 75vh;
+                aspect-ratio: 4/5;
+                margin: 0 auto;
+                padding: 2rem 0;
                 display: flex;
-                transition: transform 0.5s ease;
+                position: relative; /* For absolute positioning of slides */
         }
 
-        .slide {
-                min-width: 100%; /* Full width for each slide */
-                transition: opacity 0.5s ease;
-                display: flex; /* Center slide contents */
-                justify-content: center; /* Center the image */
-                align-items: center; /* Center the image vertically */
-        }
-
-        .slide img {
-                width: auto; /* Maintain original width */
-                max-height: 75vh; /* Ensure it doesn't overflow the container */
-                object-fit: contain; /* Maintain aspect ratio */
-        }
-
-        .buttons {
-                position: absolute;
-                top: 50%; /* Center buttons vertically */
+        .carousel-slide {
+                height: 100%;
+                width: 100%; /* Full width for each slide */
+                position: absolute; /* Stack slides on top of each other */
+                top: 0; /* Align to the top */
                 left: 0; /* Align to the left */
-                width: 100%; /* Full width of the carousel */
+                opacity: 0; /* Start hidden */
+                border: 0.2rem solid #2c1601;
+        }
+
+        .carousel-slide img {
+                object-fit: cover;
                 height: 100%;
-                display: flex;
-                justify-content: space-between; /* Space buttons evenly */
-                align-items: center; /* Center buttons vertically */
-                transform: translateY(-50%); /* Adjust for centering */
         }
 
-        .button {
-                background: rgba(0, 0, 0, 0.5); /* Slightly opaque background */
-                color: #ece5db;
-                border: none;
-                cursor: pointer;
-                padding: 10px; /* Add padding for better touch targets */
-                transition: background 0.3s; /* Smooth transition */
-                height: 100%;
-                width: 10%; /* Set a width for the buttons */
-                /* Adjust this value as needed for your layout */
+        .carousel-slide.active {
+                opacity: 1; /* Fully visible */
+                z-index: 9;
         }
 
-        .button:hover {
-                background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+        .carousel-slide.incoming {
+                opacity: 1; /* Grayed out */
+                transform: translateX(-80%) scale(0.8); /* Shift left and smaller */
+                z-index: 8;
         }
 
-        .buttons button:first-child {
-                padding-left: 5%;
-                padding-right: 20%;
-        }
-        .buttons button:last-child {
-                padding-right: 5%;
-                padding-left: 20%;
-        }
-        .buttons button:first-child:hover {
-                background: linear-gradient(
-                        to right,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
+        .carousel-slide.outgoing {
+                opacity: 1; /* Grayed out */
+                transform: translateX(80%) scale(0.8); /* Shift right and smaller */
+                z-index: 8;
         }
 
-        .buttons button:last-child:hover {
-                background: linear-gradient(
-                        to left,
-                        rgb(0, 0, 0, 0.6),
-                        rgb(0, 0, 0, 0)
-                );
+        .carousel-slide.incoming2 {
+                transform: translateX(-120%) scale(0.6); /* Shift left and smaller */
+                z-index: 7;
+                opacity: 1; /* Grayed out */
         }
+
+        .carousel-slide.outgoing2 {
+                transform: translateX(120%) scale(0.6); /* Shift right and smaller */
+                z-index: 7;
+                opacity: 1; /* Grayed out */
+        }
+
+        .carousel-slide img {
+                object-fit: fit; /* Maintain aspect ratio without cropping */
+                max-height: 100%; /* Ensure image height does not exceed container */
+                max-width: 100%; /* Ensure image width does not exceed container */
+                margin: auto; /* Center image within the div */
+        }
+
         .menu-container {
                 margin-top: 6rem;
                 display: flex;
@@ -2451,31 +2218,19 @@ body {
                 max-height: fit-content;
         }
         */
-        .spoiler-content {
+
+        .spoiler-content.active {
                 margin-top: 2rem;
-                max-height: 0px;
-        }
-
-        .spoiler-container.active {
-                text-align: center;
-                z-index: 10000;
-                min-height: 50px;
-                margin-bottom: 0;
-
-                margin-top: 1.5rem;
-        }
-
-        .spoiler-container.active a {
-                min-height: 50px;
-                cursor: pointer;
-                z-index: 10000000000;
-                height: 1rem;
         }
 
         .spoiler-container {
-                height: 0px;
-                pointer-events: auto; /* Ensure it can receive click events */
-                min-height: 0px;
+                text-align: center;
+                margin-top: 0.7rem;
+                margin-bottom: 0.5rem;
+        }
+
+        .spoiler-container.active {
+                height: 0;
         }
 
         h4 em {
@@ -2579,14 +2334,21 @@ body {
 
         .dropdown-title {
                 padding: 0 2rem;
-                flex-grow: 1; /* Allow this div to take available space */
                 text-align: center; /* Center text within this div */
-                min-width: 20rem; /* Minimum width */
+                flex-grow: 1;
+
+                min-width: fit-content;
                 display: inline-flex; /* Use inline-flex to allow content to dictate size */
                 white-space: nowrap; /* Prevent text wrapping */
                 overflow: hidden; /* Hide overflow text */
                 text-overflow: ellipsis; /* Show ellipsis for overflow */
                 box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .dropdown-container div:last-child {
+                flex-grow: 1;
+                flex: 20;
+                height: 100%;
         }
 
         .about-us-footer {
@@ -2602,6 +2364,8 @@ body {
                 justify-content: center;
                 width: 80vw;
                 margin: auto;
+                padding-top: 0;
+                padding-bottom: 0;
         }
 
         .promotions-container > div {
@@ -2613,6 +2377,12 @@ body {
                 flex-direction: column;
                 flex-grow: 1;
                 padding: 1rem;
+        }
+
+        .promotion p {
+                text-align: center;
+                font-size: 1.4rem;
+                font-weight: 600;
         }
 
         .promotion:first-child {
@@ -2719,6 +2489,6 @@ body {
         }
 
         p {
-                font-size: 1.5rem; /* Increased size */
+                font-size: 1.7rem; /* Increased size */
         }
 }
