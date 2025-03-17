@@ -1,156 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <meta charset="UTF-8" />
-                <meta
-                        name="viewport"
-                        content="width=device-width, initial-scale=1.0"
-                />
-                
-                <title>Picana's</title>
-                <link rel="stylesheet" href="reset.css" />
-                <link rel="stylesheet" href="dropdown.css" />
-                <link rel="stylesheet" href="index.css" />
-        </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <body class="background-black">
-                <main>
-                        <header>
-                                <article class="dropdown-container">
-                                        <div class="dropdown" id="dropdown">
-                                                <div
-                                                        class="hamburger"
-                                                        id="hamburger"
-                                                >
-                                                        <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="100%"
-                                                                height="100%"
-                                                                viewBox="0 0 30 20"
-                                                        >
-                                                                <rect
-                                                                        width="30"
-                                                                        height="4"
-                                                                        fill="#ece5db"
-                                                                />
-                                                                <rect
-                                                                        y="8"
-                                                                        width="30"
-                                                                        height="4"
-                                                                        fill="#ece5db"
-                                                                />
-                                                                <rect
-                                                                        y="16"
-                                                                        width="30"
-                                                                        height="4"
-                                                                        fill="#ece5db"
-                                                                />
-                                                        </svg>
-                                                </div>
+		<title>PicanasHK</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="dropdown.css" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
 
-                                                <div class="cross" id="cross">
-                                                        <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="100%"
-                                                                height="100%"
-                                                                viewBox="0 0 30 30"
-                                                        >
-                                                                <line
-                                                                        x1="5"
-                                                                        y1="5"
-                                                                        x2="25"
-                                                                        y2="25"
-                                                                        stroke="#ece5db"
-                                                                        stroke-width="4"
-                                                                />
-                                                                <line
-                                                                        x1="25"
-                                                                        y1="5"
-                                                                        x2="5"
-                                                                        y2="25"
-                                                                        stroke="#ece5db"
-                                                                        stroke-width="4"
-                                                                />
-                                                        </svg>
-                                                </div>
-                                        </div>
+	<body class="background-black">
+		<main>
+			<header>
+				<article class="dropdown-container">
+					<div class="dropdown" id="dropdown">
+						<div class="hamburger" id="hamburger">
+							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 30 20">
+								<rect width="30" height="4" fill="#ece5db" />
+								<rect y="8" width="30" height="4" fill="#ece5db" />
+								<rect y="16" width="30" height="4" fill="#ece5db" />
+							</svg>
+						</div>
 
-                                        <div
-                                                class="dropdown-title"
-                                                id="dropdown-title"
-                                        >
-                                                <a href="https://book.bistrochat.com/picanhas">
-                                                        <h2>BOOK NOW</h2>
-                                                </a>
-                                        </div>
+						<div class="cross" id="cross">
+							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 30 30">
+								<line x1="5" y1="5" x2="25" y2="25" stroke="#ece5db" stroke-width="4" />
+								<line x1="25" y1="5" x2="5" y2="25" stroke="#ece5db" stroke-width="4" />
+							</svg>
+						</div>
+					</div>
 
-                                        <div></div>
-                                </article>
+					<div class="dropdown-title" id="dropdown-title">
+						<a href="https://book.bistrochat.com/picanhas" data-localize="book_now_main">
+							<h2>BOOK NOW</h2>
+						</a>
+					</div>
 
-                                <nav
-                                        class="dropdown-content dropdown-colour"
-                                        id="dropdown-content"
-                                >
-                                        <div>
-                                                <a href="about_us.html"
-                                                        ><h4>ABOUT US</h4></a
-                                                >
-                                        </div>
-                                        <div>
-                                                <a href="promotions.html"
-                                                        ><h4>PROMOTIONS</h4></a
-                                                >
-                                        </div>
-                                        <div>
-                                                <a href="menu.html"
-                                                        ><h4>MENU</h4></a
-                                                >
-                                        </div>
-                                        <div>
-                                                <a href="gallery.html"
-                                                        ><h4>GALLERY</h4></a
-                                                >
-                                        </div>
-                                        <div>
-                                                <a href="https://book.bistrochat.com/picanhas"
-                                                        ><h4>BOOK NOW</h4></a
-                                                >
-                                        </div>
-                                        <div>
-                                                <a href="contact_us.html"
-                                                        ><h4>CONTACT US</h4></a
-                                                >
-                                        </div>
-                                        <div>
-                                                <a href="reviews.html"
-                                                        ><h4>REVIEWS</h4></a
-                                                >
-                                        </div>
-                                </nav>
-                        </header>
+					<div>
+						<!-- <div class="lang-icon">
+							<div id="chinese-toggle" class="lang-toggle">
+								<h2><span data-lang="zh"> ZH </span></h2>
+							</div>
+							<div id="english-toggle" class="lang-toggle">
+								<h2><span data-lang="en"> EN </span></h2>
+							</div>
+						</div> -->
+					</div>
+				</article>
 
-                        <script src="dropdown.js"></script>
+				<nav class="dropdown-content dropdown-colour" id="dropdown-content">
+					<div>
+						<a href="about_us.html"><h4 data-localize="about_us">ABOUT US</h4></a>
+					</div>
+					<div>
+						<a href="promotions.html"><h4 data-localize="promotions">PROMOTIONS</h4></a>
+					</div>
+					<div>
+						<a href="menu.html"><h4 data-localize="menu">MENU</h4></a>
+					</div>
+					<div>
+						<a href="gallery.html"><h4 data-localize="gallery">GALLERY</h4></a>
+					</div>
+					<div>
+						<a href="https://book.bistrochat.com/picanhas"><h4 data-localize="book_now">BOOK NOW</h4></a>
+					</div>
+					<div>
+						<a href="contact_us.html"><h4 data-localize="contact_us">CONTACT US</h4></a>
+					</div>
+					<div>
+						<a href="reviews.html"><h4 data-localize="reviews">REVIEWS</h4></a>
+					</div>
+				</nav>
+			</header>
 
-                        <video autoplay muted loop class="background-video">
-                                <source
-                                        src="videos/Video main page.mp4"
-                                        type="video/mp4"
-                                />
-                        </video>
+			<script src="/scripts/dropdown.js"></script>
+			<script src="/scripts/setVh.js"></script>
+			<!-- <script src="/scripts/localisation.js"></script> -->
 
-                        <div class="overlay"></div>
+			<video autoplay muted loop class="background-video">
+				<source src="videos/Video main page.mp4" type="video/mp4" />
+			</video>
 
-                        <img
-                                class="background-logo"
-                                src="images/Picanha logo white  main page.svg"
-                        />
+			<div class="overlay"></div>
 
-                        <footer>
-                                <p>
-                                        Shop A, Ground Floor, No. 27 - 29 Elgin
-                                        Street,Central, Hong Kong
-                                </p>
-                        </footer>
-                </main>
-        </body>
+			<img class="background-logo" src="images/Picanha logo white  main page.svg" />
+
+			<footer>
+				<p>Shop A, Ground Floor, No. 27 - 29 Elgin Street, Central, Hong Kong</p>
+			</footer>
+		</main>
+	</body>
 </html>
