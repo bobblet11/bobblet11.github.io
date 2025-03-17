@@ -2559,7 +2559,7 @@ body {
 		height: 100%;
 	}
 
-	.dropdown-container div:last-child >div{
+	.dropdown-container div:last-child > div {
 		flex-grow: 0;
 		width: 100%;
 		height: 100%;
@@ -2722,10 +2722,9 @@ body {
 	}
 
 	.lang-icon {
-		
 	}
 
 	.hours * {
-	text-align: left;
-}
+		text-align: left;
+	}
 }
