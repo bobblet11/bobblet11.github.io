@@ -40,7 +40,7 @@ a {
         cursor: pointer;
 }
 
-.dropdown-content{
+.dropdown-content {
         max-height: 50vh;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -71,11 +71,12 @@ p {
 }
 
 .background-brown {
-        background-image: url("images/Terracota\ texture\ background.jpg");
+        background-color: #000000;
         background-size: cover; /* This will make the image cover the entire background */
         background-position: center; /* This will center the image */
         background-repeat: repeat; /* This prevents the image from repeating */
-        color: #2c1601;
+        color: #ffffff;
+        background-size: 35%; /* Zoom out by scaling the image */
 }
 
 .background-brown-two {
@@ -578,7 +579,7 @@ body {
                 gap: 0rem;
                 align-items: center;
                 padding-right: 0.5rem;
-        
+
                 background-color: #9b5639;
         }
 
@@ -2393,7 +2394,7 @@ body {
 
         .text-block a {
                 font-size: 2rem;
-                color: #2c1601;
+                color: #ffffff;
         }
 
         /* .text-block div:last-child {
