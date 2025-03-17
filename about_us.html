@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>PicanasHK</title>
+		<title>PicanhasHK</title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="dropdown.css" />
 		<link rel="stylesheet" href="index.css" />
@@ -31,36 +31,42 @@
 					</div>
 
 					<div class="dropdown-title" id="dropdown-title">
-						<a href="https://book.bistrochat.com/picanhas">
+						<a href="https://book.bistrochat.com/picanhas" data-localize="book_now_main">
 							<h2>BOOK NOW</h2>
 						</a>
 					</div>
 
-					<div></div>
+					<div>
+						<div class="lang-icon">
+							<div id="toggle" class="lang-toggle">
+								<h2><span id="langSelector"> 中文 </span></h2>
+							</div>
+						</div>
+					</div>
 				</article>
 
 				<nav class="dropdown-content background-brown-two dropdown-colour" id="dropdown-content">
 					<div>
-						<a href="index.html"><h4>HOME</h4></a>
+						<a href="index.html"><h4 data-localize="home">HOME</h4></a>
 					</div>
 
 					<div>
-						<a href="promotions.html"><h4>PROMOTIONS</h4></a>
+						<a href="promotions.html"><h4 data-localize="promotions">PROMOTIONS</h4></a>
 					</div>
 					<div>
-						<a href="menu.html"><h4>MENU</h4></a>
+						<a href="menu.html"><h4 data-localize="menu">MENU</h4></a>
 					</div>
 					<div>
-						<a href="gallery.html"><h4>GALLERY</h4></a>
+						<a href="gallery.html"><h4 data-localize="gallery">GALLERY</h4></a>
 					</div>
 					<div>
-						<a href="https://book.bistrochat.com/picanhas"><h4>BOOK NOW</h4></a>
+						<a href="https://book.bistrochat.com/picanhas"><h4 data-localize="book_now">BOOK NOW</h4></a>
 					</div>
 					<div>
-						<a href="contact_us.html"><h4>CONTACT US</h4></a>
+						<a href="contact_us.html"><h4 data-localize="contact_us">CONTACT US</h4></a>
 					</div>
 					<div>
-						<a href="reviews.html"><h4>REVIEWS</h4></a>
+						<a href="reviews.html"><h4 data-localize="reviews">REVIEWS</h4></a>
 					</div>
 				</nav>
 			</header>
@@ -68,26 +74,24 @@
 			<script src="/scripts/dropdown.js"></script>
 			<script src="/scripts/setVh.js"></script>
 			<script src="/scripts/localisation.js"></script>
-	
 
-		
-			<div  class="main-content">
-				<h1>ABOUT US</h1>
-                                
+			<div class="main-content">
+				<h1 data-localize="about_us">ABOUT US</h1>
+
 				<div class="text-block">
-					<p>
+					<p data-localize="about_us_para1">
 						Welcome to Picanhas', a new culinary experience from the creators of Hong Kong’s "Flat Iron Steak." Our intimate 40-seat restaurant, centered around an open kitchen, offers a theatrical dining experience. Watch as our chefs expertly roast Black Angus and Wagyu Picanhas (Rump Caps) in the Josper Grill and carve them tableside. Enjoy freshly blended
 						chimichurri to accompany the steaks and freshly made churros served with Chef Billy’s secret hot chocolate sauce.
 					</p>
 
 					<div class="spoiler-content" id="spoilerContent">
-						<p>
+						<p data-localize="about_us_para2">
 							At Picanhas', we focus on delivering great value steaks and affordable Argentinian wines. Our chefs double as your servers, ensuring each steak is cooked to perfection, your wine glass is always full, and the stories behind each menu item are shared. The ‘Picanha,’ a favorite in Latin America, also known as the rump cap or top sirloin, is
 							prepared using traditional Brazilian techniques. Our chefs smoke and render the fat cap before grilling the meat over intense heat to lock in flavor and juices, then slice it thinly and drench it in zesty chimichurri.
-
-							<br />
-							<br />
-
+						</p>
+						<br />
+						<br />
+						<p data-localize="about_us_para2">
 							This concept is the brainchild of Latin American Chef Billy Otis, formerly of Black Sheep Restaurants, and Johnny Glover, founder of the Michelin-starred Butchers Club, Flat Iron, and Steak King. We offer three tiers of Rump Cap: Black Angus, Dry Aged Black Angus, and Wagyu. Our set lunch starts at $158 and includes a dessert and a drink. Our
 							wine list, curated by Roberto Cahiza from Mendoza, Argentina, features three of his own exquisite Malbecs from his family boutique winery; El Nudo in the Uco Valley. Each wine is generously poured by the glass to perfectly complement our magnificent beef.
 						</p>
@@ -103,18 +107,20 @@
 				</div>
 
 				<script>
+					const spoilerContent = document.getElementById("spoilerContent");
+					const spoilerLink = document.getElementById("spoiler-container-a");
+					const lang = document.getElementById("langSelector").innerText;
+					spoilerLink.innerText = lang === "EN" ?  "更多" : "MORE ..." ; // Change link text
 					function toggleSpoiler() {
-						const spoilerContent = document.getElementById("spoilerContent");
-						const spoilerLink = document.getElementById("spoiler-container-a");
-
 						// Check if the content is collapsed
 						if (spoilerContent.style.maxHeight === "0px" || spoilerContent.style.maxHeight === "") {
 							spoilerContent.style.maxHeight = spoilerContent.scrollHeight + "px"; // Set to full height
-							spoilerLink.innerText = "LESS ..."; // Change link text
+
+							spoilerLink.innerText = lang === "EN" ?  "少" : "LESS ..." ; // Change link text
 							spoilerContent.classList.add("active");
 						} else {
 							spoilerContent.style.maxHeight = "0px"; // Collapse the content
-							spoilerLink.innerText = "MORE ..."; // Change link text
+							spoilerLink.innerText = lang === "EN" ? "更多" : "MORE ..." ; // Change link text
 							spoilerContent.classList.remove("active");
 						}
 					}

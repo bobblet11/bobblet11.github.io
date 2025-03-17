@@ -19,24 +19,12 @@
 	font-style: normal;
 }
 
-.lang-icon {
-	min-height: 50px;
+.lang-toggle {
 	min-width: 50px;
-	margin: 0;
-	position: relative;
-}
-
-.lang-icon div {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	margin: auto 0;
-	top: 50%;
-	bottom: 50%;
-}
-
-.lang-icon div * {
-	width: 100%;
+	min-height: 50px;
+	cursor: pointer;
+	width: fit-content;
+	word-break: keep-all;
 }
 
 .carousel-container-2 {
@@ -44,6 +32,7 @@
 }
 html,
 body {
+	-webkit-transform: translate3d(0, 0, 0);
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -77,7 +66,7 @@ h1 {
 
 h2 {
 	font-family: "type-writer-thin", Arial, Helvetica, sans-serif;
-            font-weight: 200;
+	font-weight: 200;
 }
 
 h3 {
@@ -94,6 +83,7 @@ p {
 
 .background-brown {
 	background-image: url("images/Terracota\ texture\ background.jpg");
+	background-attachment: scroll;
 	background-size: cover; /* This will make the image cover the entire background */
 	background-position: center; /* This will center the image */
 	background-repeat: repeat; /* This prevents the image from repeating */
@@ -122,6 +112,9 @@ p {
 
 .hours-maps {
 	cursor: pointer;
+}
+.hours * {
+	text-align: center;
 }
 
 .icon-text {
@@ -222,10 +215,6 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-	.lang-icon div {
-		right: 0rem;
-		width: 50px;
-	}
 	.third-overlay {
 		z-index: 1;
 		position: absolute;
@@ -283,6 +272,12 @@ body {
 	.contacts_container {
 		display: flex;
 		flex-direction: column;
+	}
+	.menu-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-top: 1rem;
 	}
 
 	.contacts {
@@ -656,12 +651,6 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px - 768) */
 @media screen and (min-width: 601px) and (max-width: 767px) {
-	.lang-icon div {
-		right: 1.5rem;
-		width: 50px;
-		height: 50px;
-	}
-
 	.third-overlay {
 		z-index: 1;
 		position: absolute;
@@ -898,6 +887,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+		margin-top: 2rem;
 	}
 
 	.undertitle p {
@@ -1052,6 +1042,13 @@ body {
 	.dropdown-content.show-scrollbar::-webkit-scrollbar {
 		display: block; /* Show scrollbar */
 		width: 8px; /* Width of the scrollbar */
+	}
+
+	.menu-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-top: 1rem;
 	}
 
 	.dropdown-content.show-scrollbar::-webkit-scrollbar-thumb {
@@ -1897,6 +1894,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+		margin-top: 2rem;
 	}
 
 	.undertitle p {
@@ -2105,7 +2103,7 @@ body {
 	}
 	h2 {
 		font-size: 2.5rem; /* Increased size */
-                font-weight: 200;
+		font-weight: 200;
 	}
 
 	h3 {
@@ -2117,14 +2115,6 @@ body {
 	}
 	p {
 		font-size: 1.5rem; /* Increased size */
-	}
-
-	.lang-icon {
-		min-height: 50px;
-		min-width: 50px;
-		margin-left: auto;
-		margin-right: 3rem;
-		width: fit-content;
 	}
 
 	.background-brown {
@@ -2569,6 +2559,16 @@ body {
 		height: 100%;
 	}
 
+	.dropdown-container div:last-child >div{
+		flex-grow: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		margin-right: 5rem;
+	}
+
 	.about-us-footer {
 		width: 30%;
 		position: relative;
@@ -2695,7 +2695,7 @@ body {
 
 	h2 {
 		font-size: 3rem; /* Increased size */
-                    font-weight: 200;
+		font-weight: 200;
 	}
 
 	h3 {
@@ -2710,21 +2710,6 @@ body {
 		font-size: 1.7rem; /* Increased size */
 	}
 
-	.lang-icon {
-		min-height: 50px;
-		min-width: 50px;
-		margin: 0;
-		position: relative;
-	}
-
-	.lang-icon div {
-		position: absolute;
-		right: 3rem;
-		margin: auto 0;
-		top: 50%;
-		bottom: 50%;
-	}
-
 	.text-block {
 		margin-top: 6.2rem;
 	}
@@ -2735,4 +2720,12 @@ body {
 	.background-brown {
 		background-size: 50%; /* Zoom out by scaling the image */
 	}
+
+	.lang-icon {
+		
+	}
+
+	.hours * {
+	text-align: left;
+}
 }

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>PicanasHK</title>
+		<title>PicanhasHK</title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="dropdown.css" />
 		<link rel="stylesheet" href="index.css" />
@@ -16,8 +16,8 @@
 					<div class="dropdown" id="dropdown">
 						<div class="hamburger" id="hamburger">
 							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 30 20">
-								<rect width="30" height="4"fill="#ece5db"/>
-								<rect y="8" width="30" height="4"fill="#ece5db" />
+								<rect width="30" height="4" fill="#ece5db" />
+								<rect y="8" width="30" height="4" fill="#ece5db" />
 								<rect y="16" width="30" height="4" fill="#ece5db" />
 							</svg>
 						</div>
@@ -32,35 +32,41 @@
 
 					<div class="dropdown-title" id="dropdown-title">
 						<a href="https://book.bistrochat.com/picanhas">
-							<h2>BOOK NOW</h2>
+							<h2 data-localize="book_now_main">BOOK NOW</h2>
 						</a>
 					</div>
 
-					<div></div>
+					<div>
+						<div class="lang-icon">
+							<div id="toggle" class="lang-toggle">
+								<h2><span id="langSelector"> 中文 </span></h2>
+							</div>
+						</div>
+					</div>
 				</article>
 
 				<nav class="dropdown-content dropdown-colour background-brown-two" id="dropdown-content">
 					<div>
-						<a href="index.html"><h4>HOME</h4></a>
+						<a href="index.html"><h4 data-localize="home">HOME</h4></a>
 					</div>
 					<div>
-						<a href="about_us.html"><h4>ABOUT US</h4></a>
+						<a href="about_us.html"><h4 data-localize="about_us">ABOUT US</h4></a>
 					</div>
 					<div>
-						<a href="promotions.html"><h4>PROMOTIONS</h4></a>
+						<a href="promotions.html"><h4 data-localize="promotions">PROMOTIONS</h4></a>
 					</div>
 					<div>
-						<a href="menu.html"><h4>MENU</h4></a>
+						<a href="menu.html"><h4 data-localize="menu">MENU</h4></a>
 					</div>
 					<div>
-						<a href="gallery.html"><h4>GALLERY</h4></a>
+						<a href="gallery.html"><h4 data-localize="gallery">GALLERY</h4></a>
 					</div>
 					<div>
-						<a href="https://book.bistrochat.com/picanhas"><h4>BOOK NOW</h4></a>
+						<a href="https://book.bistrochat.com/picanhas"><h4 data-localize="book_now">BOOK NOW</h4></a>
 					</div>
 
 					<div>
-						<a href="reviews.html"><h4>REVIEWS</h4></a>
+						<a href="reviews.html"><h4 data-localize="reviews">REVIEWS</h4></a>
 					</div>
 				</nav>
 			</header>
@@ -72,7 +78,7 @@
 			<div class="main-content">
 				<div class="contacts_container">
 					<div class="contacts">
-						<h1>CONTACT US</h1>
+						<h1 data-localize="contact_us">CONTACT US</h1>
 
 						<div class="icon-text">
 							<div class="icon ex">
@@ -108,30 +114,33 @@
 
 				<div class="hours_container">
 					<div class="hours">
-						<h1>HOURS:</h1>
+						<h1 data-localize="hours">HOURS:</h1>
 						<div>
-							<h4>Monday - Thursday</h4>
+							<h4 data-localize="days_1">Monday - Thursday</h4>
 
-							<p>12pm – 11:30pm</p>
+							<p data-localize="hours_1">12pm – 11:30pm</p>
 						</div>
 
 						<div>
-							<h4>Friday & Saturday</h4>
+							<h4 data-localize="days_2">Friday & Saturday</h4>
 
-							<p>12pm – Late</p>
+							<p data-localize="hours_2">12pm – Late</p>
 						</div>
 
 						<div>
-							<h4>Sunday - Public Holidays</h4>
+							<h4 data-localize="days_3">Sunday - Public Holidays</h4>
 
-							<p>9am – 10:30pm</p>
+							<p data-localize="hours_3">9am – 10:30pm</p>
 						</div>
 					</div>
 
 					<div class="hours-maps">
-                                                <a target="_blank" href="https://www.google.com/maps/place/Flat+Iron+Burger/@22.2819526,114.1520479,19.5z/data=!4m10!1m2!2m1!1sflatiron!3m6!1s0x340401006774e6c9:0xcac1b7f56003ac34!8m2!3d22.2819713!4d114.1522263!15sCghmbGF0aXJvbloKIghmbGF0aXJvbpIBFGhhbWJ1cmdlcl9yZXN0YXVyYW504AEA!16s%2Fg%2F11vwkdsb9s?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D">
-                                                        <img src="images/map.jpg">
-                                                </a>
+						<a
+							target="_blank"
+							href="https://www.google.com/maps/place/Flat+Iron+Burger/@22.2819526,114.1520479,19.5z/data=!4m10!1m2!2m1!1sflatiron!3m6!1s0x340401006774e6c9:0xcac1b7f56003ac34!8m2!3d22.2819713!4d114.1522263!15sCghmbGF0aXJvbloKIghmbGF0aXJvbpIBFGhhbWJ1cmdlcl9yZXN0YXVyYW504AEA!16s%2Fg%2F11vwkdsb9s?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
+						>
+							<img src="images/map.jpg" />
+						</a>
 					</div>
 				</div>
 

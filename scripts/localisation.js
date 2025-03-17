@@ -1,39 +1,54 @@
+const button = document.getElementById("toggle");
+const text = document.getElementById("langSelector");
+
 function loadTranslations(language) {
+	const spoilerContent = document.getElementById("spoilerContent");
+	const spoilerLink = document.getElementById("spoiler-container-a");
+	const lang = text.innerText;
+
+	// Uncomment and fix this if needed
+	// if (spoilerContent.classList.contains("active")) {
+	//     spoilerLink.innerText = lang === "EN" ? "少" : "LESS ..."; // Change link text
+	// } else {
+	//     spoilerLink.innerText = lang === "EN" ? "更多" : "MORE ..."; // Change link text
+	// }
+
 	fetch(`text/${language}.json`)
 		.then((response) => response.json())
 		.then((translations) => {
+			console.log(translations);
 			const elements = document.querySelectorAll("[data-localize]");
 			elements.forEach((element) => {
 				const key = element.getAttribute("data-localize");
 				element.innerText = translations[key];
 			});
 		})
-		.then(() => {})
 		.catch((error) => console.error("Error loading translations:", error));
 }
 
 function handleClick(language) {
 	if (language === "en") {
-		document.getElementById("english-toggle").style.visibility = "hidden";
-		document.getElementById("chinese-toggle").style.visibility = "visible";
+		text.innerText = "中文";
 	} else {
-		document.getElementById("english-toggle").style.visibility = "visible";
-		document.getElementById("chinese-toggle").style.visibility = "hidden";
+		text.innerText = "EN";
 	}
+	localStorage.setItem("selectedLanguage", language); // Store
 }
 
-document.getElementById("english-toggle").addEventListener("click", () => {
-	handleClick("en");
-	loadTranslations("en");
-});
-
-document.getElementById("chinese-toggle").addEventListener("click", () => {
-	handleClick("zh");
-	loadTranslations("en");
+text.addEventListener("click", () => {
+	if (text.innerText === "EN") {
+		handleClick("en");
+		loadTranslations("en");
+	} else {
+		handleClick("zh");
+		loadTranslations("zh");
+	}
 });
 
 // Load default language
-// Default to English
-loadTranslations("en");
-document.getElementById("english-toggle").style.visibility = "visible";
-document.getElementById("chinese-toggle").style.visibility = "hidden";
+window.onload = function () {
+	let selectedLanguage = localStorage.getItem("selectedLanguage") || "en"; // Default to English
+	console.log(selectedLanguage);
+	text.innerText = selectedLanguage === "en" ? "中文" : "EN"; // Update toggle button text
+	loadTranslations(selectedLanguage);
+};
