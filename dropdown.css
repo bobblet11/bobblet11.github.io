@@ -13,7 +13,7 @@
 	margin: auto;
 }
 .dropdown-title {
-	font-size: 3rem; /* Increased size */
+
 	flex: 1; /* Allow this div to take available space */
 	text-align: center; /* Center text within this div */
 	min-height: 44px;
