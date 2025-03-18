@@ -32,7 +32,7 @@
 					</div>
 
 					<div class="dropdown-title" id="dropdown-title">
-						<a href="https://book.bistrochat.com/picanhas" >
+						<a href="https://book.bistrochat.com/picanhas">
 							<h2 data-localize="book_now_main">BOOK NOW</h2>
 						</a>
 					</div>
@@ -75,8 +75,11 @@
 			<script src="/scripts/setVh.js"></script>
 			<script src="/scripts/localisation.js"></script>
 
-			<video autoplay="autoplay" loop class="background-video" loop muted playsInline>
-				<source src="videos/main_video_min.mp4" type="video/mp4" />
+			<video autoplay="autoplay" loop class="background-video" loop muted playsinline>
+				
+				<source src="videos/main_video_min.mp4" type="video/mp4" media="all and (max-width: 700px)" />
+				<source src="videos/main_video_med.mp4" type="video/mp4" />
+
 			</video>
 
 			<div class="overlay"></div>
