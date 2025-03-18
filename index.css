@@ -19,6 +19,15 @@
 	font-style: normal;
 }
 
+#coming-soon {
+	margin-top: 30rem;
+	font-size: 40rem;
+}
+
+#coming-soon * {
+	font-size: 10rem;
+}
+
 .lang-toggle {
 	min-width: 50px;
 	min-height: 50px;
@@ -220,6 +229,14 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
+	#coming-soon {
+		margin-top: 30rem;
+		font-size: 40rem;
+	}
+
+	#coming-soon * {
+		font-size: 8rem;
+	}
 	.third-overlay {
 		z-index: 1;
 		position: absolute;
@@ -412,7 +429,6 @@ body {
 
 	.carousel-container img {
 		height: 100%;
-		
 	}
 
 	.menu {
@@ -667,6 +683,13 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px - 768) */
 @media screen and (min-width: 601px) and (max-width: 767px) {
+	#coming-soon {
+		margin-top: 25rem;
+	}
+
+	#coming-soon * {
+		font-size: 8rem;
+	}
 	.third-overlay {
 		z-index: 1;
 		position: absolute;
@@ -1162,6 +1185,13 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	#coming-soon {
+		margin-top: 20rem;
+	}
+
+	#coming-soon * {
+		font-size: 8rem;
+	}
 	/* .dropdown {
                 width: fit-content;
                 margin-left: 2rem;
@@ -1383,7 +1413,6 @@ body {
 	}
 
 	.carousel-container img {
-		
 		object-fit: cover;
 		height: 100%;
 	}
@@ -1671,6 +1700,13 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1259px) {
+	#coming-soon {
+		margin-top: 22rem;
+	}
+
+	#coming-soon * {
+		font-size: 8rem;
+	}
 	/* .dropdown {
                 width: fit-content;
                 margin-left: 2rem;
@@ -2174,6 +2210,13 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1260px) {
+	#coming-soon {
+		margin-top: 15rem;
+	}
+
+	#coming-soon * {
+		font-size: 8rem;
+	}
 	.socials {
 		display: flex;
 		width: 100%;

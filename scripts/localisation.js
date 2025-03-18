@@ -6,6 +6,19 @@ function loadTranslations(language) {
 	const spoilerLink = document.getElementById("spoiler-container-a");
 	const lang = text.innerText;
 
+	const lunch = document.getElementById("lunch");
+	const dinner = document.getElementById("dinner");
+
+	if (lunch && dinner) {
+		if (language === "zh") {
+			lunch.src = "images/menu_lunch_zh.png";
+			dinner.src = "images/menu_dinner_zh.png";
+		} else {
+			lunch.src = "images/Menu Picanha Lunch.png";
+			dinner.src = "images/Menu Picanha dinner.png";
+		}
+	}
+
 	// Uncomment and fix this if needed
 	// if (spoilerContent.classList.contains("active")) {
 	//     spoilerLink.innerText = lang === "EN" ? "少" : "LESS ..."; // Change link text
