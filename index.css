@@ -82,7 +82,7 @@ p {
 }
 
 .background-brown {
-	background-image: url("images/Terracota\ texture\ background.jpg");
+	background-image: url("images/Terracota\ texture\ background-min.jpg");
 	background-attachment: scroll;
 	background-size: cover; /* This will make the image cover the entire background */
 	background-position: center; /* This will center the image */
