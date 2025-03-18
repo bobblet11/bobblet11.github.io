@@ -89,6 +89,9 @@ p {
 	background-repeat: repeat; /* This prevents the image from repeating */
 	color: #ffffff;
 	background-size: 100%;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 }
 
 .background-brown-two {
@@ -1019,7 +1022,6 @@ body {
 	}
 
 	.dropdown-title {
-
 		flex: 1; /* Allow this div to take available space */
 		text-align: center; /* Center text within this div */
 	}
@@ -1538,7 +1540,6 @@ body {
 	}
 
 	.dropdown-title {
-		
 		flex: 1; /* Allow this div to take available space */
 		text-align: center; /* Center text within this div */
 	}
@@ -2026,7 +2027,6 @@ body {
 	}
 
 	.dropdown-title {
-	
 		flex: 1; /* Allow this div to take available space */
 		text-align: center; /* Center text within this div */
 	}
