@@ -2345,24 +2345,24 @@ body {
 
 	.carousel-slide.incoming {
 		opacity: 1; /* Grayed out */
-		transform: translateX(-80%) scale(0.8); /* Shift left and smaller */
+		transform: translateX(-80%) scale(0.9); /* Shift left and smaller */
 		z-index: 8;
 	}
 
 	.carousel-slide.outgoing {
 		opacity: 1; /* Grayed out */
-		transform: translateX(80%) scale(0.8); /* Shift right and smaller */
+		transform: translateX(80%) scale(0.9); /* Shift right and smaller */
 		z-index: 8;
 	}
 
 	.carousel-slide.incoming2 {
-		transform: translateX(-120%) scale(0.6); /* Shift left and smaller */
+		transform: translateX(-120%) scale(0.8); /* Shift left and smaller */
 		z-index: 7;
 		opacity: 1; /* Grayed out */
 	}
 
 	.carousel-slide.outgoing2 {
-		transform: translateX(120%) scale(0.6); /* Shift right and smaller */
+		transform: translateX(120%) scale(0.8); /* Shift right and smaller */
 		z-index: 7;
 		opacity: 1; /* Grayed out */
 	}
