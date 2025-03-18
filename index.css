@@ -400,7 +400,19 @@ body {
 		flex-direction: column;
 		gap: 2rem;
 		width: 100vw;
-		padding: 1rem 1rem;
+		padding: 2.5rem;
+	}
+	.carousel-container > div {
+		border: #ece5db 0.5rem solid;
+		border-radius: 5px;
+		padding: 0;
+		margin: 0;
+		aspect-ratio: 4/5;
+	}
+
+	.carousel-container img {
+		height: 100%;
+		
 	}
 
 	.menu {
@@ -843,6 +855,16 @@ body {
 		gap: 2.5rem;
 		width: 100vw;
 		padding: 1rem 4rem;
+	}
+
+	.carousel-container > div {
+		border: #ece5db 0.5rem solid;
+		border-radius: 5px;
+		aspect-ratio: 4/5;
+	}
+
+	.carousel-container img {
+		height: 100%;
 	}
 
 	.menu_img {
@@ -1346,10 +1368,24 @@ body {
 	}
 	.carousel-container {
 		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		width: 100vw;
-		padding: 1rem 4rem;
+		flex-wrap: wrap; /* Allow items to wrap to new rows */
+		gap: 3rem; /* Space between items */
+		width: 100vw; /* Full viewport width */
+		padding: 1rem 4rem; /* Padding around the container */
+	}
+
+	.carousel-container > div {
+		flex: 0 0 calc(50% - 1.5rem); /* Each item takes up 50% of the width */
+		box-sizing: border-box; /* Include padding and border in the element's total width and height */
+		border: #ece5db 0.5rem solid;
+		border-radius: 5px;
+		aspect-ratio: 4/5;
+	}
+
+	.carousel-container img {
+		
+		object-fit: cover;
+		height: 100%;
 	}
 
 	.menu_img {
@@ -1837,14 +1873,27 @@ body {
 
 	.carousel-container {
 		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		width: 100vw;
-		padding: 1rem 4rem;
+		flex-wrap: wrap; /* Allow items to wrap to new rows */
+		gap: 3rem; /* Space between items */
+		width: 100vw; /* Full viewport width */
+		padding: 1rem 4rem; /* Padding around the container */
+	}
+
+	.carousel-container > div {
+		flex: 0 0 calc(50% - 1.5rem); /* Each item takes up 50% of the width */
+		box-sizing: border-box; /* Include padding and border in the element's total width and height */
+		border: #ece5db 0.5rem solid;
+		border-radius: 5px;
+		aspect-ratio: 4/5;
+	}
+
+	.carousel-container img {
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.menu_img {
-		width: 100vw;
+		width: 100%;
 		padding: 0 1rem;
 	}
 	.promotion {
@@ -2332,7 +2381,8 @@ body {
 		top: 0; /* Align to the top */
 		left: 0; /* Align to the left */
 		opacity: 0; /* Start hidden */
-		border: 0.2rem solid #2c1601;
+		border: #ece5db 0.5rem solid;
+		border-radius: 5px;
 	}
 
 	.carousel-slide img {
