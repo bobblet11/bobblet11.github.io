@@ -82,16 +82,17 @@ p {
 }
 
 .background-brown {
+	background-color: #2c1601;
 	background-image: url("images/background.png");
-	background-attachment: fixed;
-	background-size: cover; /* This will make the image cover the entire background */
-	background-position: center; /* This will center the image */
 	background-repeat: repeat; /* This prevents the image from repeating */
+	background-attachment: fixed;
+	background-position: center; /* This will center the image */
 	color: #ffffff;
-	background-size: 100%;
+	background-size: cover; /* This will make the image cover the entire background */
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+	background-size: 100%;
 }
 
 .background-brown-two {
