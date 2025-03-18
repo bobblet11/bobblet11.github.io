@@ -83,7 +83,7 @@ p {
 
 .background-brown {
 	background-image: url("images/Terracota\ texture\ background-min.jpg");
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover; /* This will make the image cover the entire background */
 	background-position: center; /* This will center the image */
 	background-repeat: repeat; /* This prevents the image from repeating */
@@ -2603,11 +2603,11 @@ body {
 	}
 
 	.promotion:first-child {
-		padding: 2.5rem;
+		padding: 1rem;
 	}
 
 	.promotion:last-child {
-		padding: 2.5rem;
+		padding: 1rem;
 	}
 
 	.promotion_img {
